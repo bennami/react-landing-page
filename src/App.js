@@ -3,6 +3,7 @@ import Routes from "./routes";
 import {Link, useHistory} from "react-router-dom"
 
 import './main.css';
+import Nav from "./components/nav";
 
 function App() {
   const history = useHistory();
@@ -40,16 +41,8 @@ function App() {
   return (
     <div className="App">
      <div className="container">
-       <nav>
-         <ul>
-           <li>
-             <Link to='/'>home</Link></li>
-         </ul>
-         <ul>
-           <li>{_contact}</li>
-         </ul>
-       </nav>
-       <Routes/>
+     <Nav contact ={_contact}/>
+     <Routes/>
 
      </div>
     </div>

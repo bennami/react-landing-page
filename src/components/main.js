@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import home1 from "./img/home1.svg";
+import home1 from "../img/home1.svg";
 import {Link, useHistory} from "react-router-dom";
 const Main = () =>{
     const [joined,setjoined] = useState("");
@@ -19,12 +19,13 @@ const Main = () =>{
     return(
         <React.Fragment>
            <header>
-               <img src= {home1} />
+
                <div>
                    <h1> Design &amp; web development <br/> a multidisciplinary studio</h1>
 
                    <Link to={"/contact"}>Get in touch </Link>
                </div>
+               <img src= {home1} />
            </header>
 
             <main>

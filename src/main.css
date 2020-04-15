@@ -3,6 +3,11 @@ html{
 
 }
 
+
+img{
+    width: 50%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +36,9 @@ nav{
     justify-content: flex-end;
     color: #282c34;
 
+}
+header{
+    display: flex;
 }
 
 nav ul li{

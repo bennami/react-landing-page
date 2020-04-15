@@ -3,10 +3,11 @@ import {Switch, Route} from 'react-router-dom';
 
 
 
-import Main from "./main";
+import Main from "./components/main";
 import Contact from "./components/contact";
 import Thanks from "./components/thanks";
 import Cv from "./components/cv";
+import Projects from "./components/projects";
 
 const Routes = () =>{
     return(
@@ -15,6 +16,8 @@ const Routes = () =>{
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/thanks/:name" component={Thanks}/>
         <Route exact path="/cv" component={Cv}/>
+        <Route exact path="/projects" component={Projects}/>
+
 
 
     </Switch>
