@@ -19,20 +19,21 @@ function App() {
 
   const checkPath = () => {
     history.listen((location) =>{
-      setPath(location.name)
+      setPath(location.pathname)
 
     })
   };
 
   useEffect( ()=>{
-
-    checkPath();
+    checkPath()
   }, []);
 
+
+  //remove contact link if you are on contact page
   const showContact = path;
   let _contact;
   if(showContact !== "/contact"){
-    _contact = (<li><Link to ="/contact">Contact me</Link></li>)
+    _contact = (<li><Link to ="/contact">Contact</Link></li>)
   }
 
   return (
@@ -41,12 +42,13 @@ function App() {
        <nav>
          <ul>
            <li>
-             <Link to='/'>newReactrouter</Link></li>
+             <Link to='/'>home</Link></li>
          </ul>
          <ul>
            <li>{_contact}</li>
          </ul>
        </nav>
+       <Routes/>
 
      </div>
     </div>
