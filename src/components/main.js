@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import home1 from "../img/home1.svg";
 import example from "../img/Screenshot 2020-04-09 at 15.48.29.png"
+import eyes from "../img/eyes.svg"
 import {Link, useHistory} from "react-router-dom";
 const Main = () =>{
     const [joined,setjoined] = useState("");
@@ -41,17 +42,15 @@ const Main = () =>{
                         <div className="service-description">
                             <h3>Your one stop shop for everything</h3>
                             <div>browse through the projects to discover what I do</div>
+                            <Link to={"/projects"}><img src={eyes} alt=""/></Link>
                         </div>
                     </div>
 
                     <div className="service-container">
-                        <div className="service-img">
-                            <img src={example} alt=""/>
-                        </div>
+
                         <div className="service-description">
                             <h3>About me</h3>
                             <div>Imane graduated in 2017 as a graphic designer. Since then she went on and acquired a second degree in Art education and is currently enrolled in a web development course. Her work is a combination of creativity and socially relevant topics. Imane enjoys combining analogue techniques with new technologies to provide a unique result in her work. <Link to={"/cv"}>Check out the resume</Link> </div>
-
                         </div>
                     </div>
 
@@ -68,7 +67,7 @@ const Main = () =>{
 
                 </section>
                 <section>
-                    <h2>Join our newsletter</h2>
+                    <h2>Join the newsletter</h2>
                     <form action="" onSubmit={join}>
                         <input type="email" placeholder={"your email goes here"} onChange={(e) =>setjoined(e.target.value)}/>
                         <input type="submit" value={"join now!"}/>
