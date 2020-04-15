@@ -5,19 +5,17 @@ function Nav(props) {
 
     return(
         <nav>
+            <h3>BENNAMI</h3>
             <ul>
-                <li>
-                    <Link to='/'>home</Link></li>
+               {props.homepage}
+                <li><Link to={'/projects'}>projects</Link></li>
+                {props.contact}
             </ul>
-            <ul>
-                <li><
-                    Link to={'/projects'}>projects</Link>
-                </li>
-            </ul>
-            <ul>
-                <li>{props.contact}</li>
-            </ul>
-
+            <div className="burger">
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+            </div>
         </nav>
 
     )

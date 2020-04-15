@@ -31,17 +31,29 @@ function App() {
   }, []);
 
 
-  //remove contact link if you are on contact page
+  //remove contact and home link if you are on contact page
   const showContact = path;
   let _contact;
+  let _homepage;
+  let _projects;
   if(showContact !== "/contact"){
-    _contact = (<li><Link to ="/contact">Contact</Link></li>)
+    _contact = (<li><Link to ="/contact">contact</Link></li>)
+  }
+  if(showContact !=="/"){
+    _homepage = (<li><Link to ="/">home</Link></li>)
+  }
+  if(showContact !=="/projects"){
+    _projects = (<li><Link to={'/projects'}>projects</Link></li>)
   }
 
   return (
     <div className="App">
-     <div className="container">
-     <Nav contact ={_contact}/>
+      <Nav
+          contact ={_contact}
+          homepage={_homepage}
+          projects ={_projects}
+      />
+      <div className="container">
      <Routes/>
 
      </div>
