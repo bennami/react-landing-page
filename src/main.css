@@ -1,0 +1,47 @@
+html{
+    background: whitesmoke;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+overflow-x: hidden;
+    padding-bottom: 320px;
+
+    background-image: url("img/bg1.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+body *{
+    transition: all 500ms ease-in-out ;
+}
+
+.container{
+    width:  80%;
+  margin: 0 auto;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: #282c34;
+
+}
+
+nav ul li{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+    color: midnightblue;
+}
+
+nav a:hover{
+    color: rebeccapurple;
+}

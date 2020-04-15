@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Routes from "./routes";
 import {Link, useHistory} from "react-router-dom"
-import './App.css';
+
+import './main.css';
 
 function App() {
   const history = useHistory();
