@@ -46,6 +46,9 @@ function App() {
     _projects = (<li><Link to={'/projects'}>projects</Link></li>)
   }
 
+
+
+
   return (
     <div className="App">
       <Nav

@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import home1 from "../img/home1.svg";
 import example from "../img/Screenshot 2020-04-09 at 15.48.29.png"
 import eyes from "../img/eyes.svg"
+import arrow from "../img/arrow.svg"
 import {Link, useHistory} from "react-router-dom";
 const Main = () =>{
     const [joined,setjoined] = useState("");
@@ -23,7 +24,8 @@ const Main = () =>{
            <header>
             <div className={"container-intro"}>
                 <div className={"intro-text"}>
-                   <h1> Design &amp; web development <br/> a multidisciplinary studio</h1>
+                   <h1>Hi, I'm Imane </h1>
+                    <p> I design, code and draw</p>
                   <button className="intro-button"><Link to={"/contact"}>Get in touch </Link></button>
                 </div>
                 <div className={"intro-image"}>
@@ -46,11 +48,11 @@ const Main = () =>{
                         </div>
                     </div>
 
-                    <div className="service-container">
+                    <div className="service-container2">
 
                         <div className="service-description">
-                            <h3>About me</h3>
-                            <div>Imane graduated in 2017 as a graphic designer. Since then she went on and acquired a second degree in Art education and is currently enrolled in a web development course. Her work is a combination of creativity and socially relevant topics. Imane enjoys combining analogue techniques with new technologies to provide a unique result in her work. <Link to={"/cv"}>Check out the resume</Link> </div>
+
+                            <div className={"text"}>Imane graduated in 2017 as a graphic designer. Since then she went on and acquired a second degree in Art education and is currently enrolled in a web development course. Her work is a combination of creativity and socially relevant topics. Imane enjoys combining analogue techniques with new technologies to provide a unique result in her work.<br/> <Link to={"/cv"}>Check out the resume<img src={arrow}/></Link>  </div>
                         </div>
                     </div>
 
