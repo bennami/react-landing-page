@@ -58,7 +58,6 @@ function App() {
       />
       <div className="container">
      <Routes/>
-
      </div>
     </div>
   );
