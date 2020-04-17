@@ -4,6 +4,9 @@ import example from "../img/Screenshot 2020-04-09 at 15.48.29.png"
 import eyes from "../img/eyes.svg"
 import arrow from "../img/arrow.svg"
 import {Link, useHistory} from "react-router-dom";
+import  '../Assets/css/homepage.css';
+import Nav from "./nav";
+
 const Main = () =>{
     const [joined,setjoined] = useState("");
     const history = useHistory();
@@ -21,7 +24,9 @@ const Main = () =>{
 
     return(
         <React.Fragment>
+            <Nav/>
            <header>
+
             <div className={"container-intro"}>
                 <div className={"intro-text"}>
                    <h1>Hi, I'm Imane </h1>
@@ -32,6 +37,7 @@ const Main = () =>{
                 <img src= {home1} />
                 </div>
             </div>
+
            </header>
 
             <main>

@@ -1,18 +1,17 @@
+main{
+    background-color: whitesmoke;
+}
+
+
 .projects-bg{
-    width: 100%;
-    background-color: black;
+    width: 90%;
+    margin: 10vh auto;
 }
 
-.burger div{
-   background-color: whitesmoke;
+nav{
+    background-color: whitesmoke;
 }
 
-nav, nav a{
-    color: whitesmoke;
-}
-body{
-    background-color: black;
-}
 .gallery{
 
     display: grid;
@@ -21,10 +20,8 @@ body{
     gap: 2rem;
     align-items: center;
     justify-items: center;
-     margin:5vh auto;
-    --stagger-delay: 100ms;
-    animation: entrance 700ms ease-out;
-    animation-fill-mode: backwards;
+    margin: 5vh auto;
+
 }
 
 @media screen and  (min-width: 600px){
@@ -54,5 +51,12 @@ body{
 
 img{
     width: 100%;
+    --stagger-delay: 100ms;
+    animation: entrance 700ms ease-out;
+    animation-fill-mode: backwards;
+}
+
+img:hover{
+  width: 110%;
 }
 

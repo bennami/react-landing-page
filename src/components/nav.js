@@ -1,7 +1,51 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Link, useHistory} from "react-router-dom";
+import "../Assets/css/nav.css"
 
 function Nav(props) {
+
+    const history = useHistory();
+
+    const [path,setPath] = useState("");
+
+    window.addEventListener("Load", ()=>{
+
+        if(window.location.pathname === '/contact'){
+
+            setPath(window.location.pathname)
+        }
+
+    });
+
+    const checkPath = () => {
+        history.listen((location) =>{
+            setPath(location.pathname)
+
+        })
+    };
+
+    useEffect( ()=>{
+        checkPath()
+    }, []);
+
+
+    //remove contact and home link if you are on contact page
+    const showContact = path;
+    let _contact;
+    let _homepage;
+    let _projects;
+    if(showContact !== "/contact"){
+        _contact = (<li><Link to ="/contact">contact</Link></li>)
+    }
+    if(showContact !=="/"){
+        _homepage = (<li><Link to ="/">home</Link></li>)
+    }
+    if(showContact !=="/projects"){
+        _projects = (<li><Link to={'/projects'}>projects</Link></li>)
+    }
+
+
+
 
     const [navClass, setClass] = useState(true);
     const [burgerClass, setBurgerClass] = useState(true);
@@ -43,11 +87,11 @@ function Nav(props) {
 
     return(
         <nav>
-            <h3>BENNAMI</h3>
+            <h3><Link to ="/">BENNAMI</Link></h3>
             <ul className={navClass ? 'nav-links': 'nav-links nav-active'}>
-                {props.homepage}
-                <li><Link to={'/projects'}>projects</Link></li>
-                {props.contact}
+                {_projects}
+                {_contact}
+
             </ul>
             <div className={burgerClass ? 'burger' : 'burger toggle'} onClick={navSlide}>
                 <div className="line1"/>
