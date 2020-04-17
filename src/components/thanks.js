@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import {useParams, useHistory} from "react-router-dom";
 
 const Thanks = () =>{
@@ -14,7 +14,6 @@ const Thanks = () =>{
             <p>you joined <strong>{history.location.state}</strong></p>
         </React.Fragment>
     )
-
 };
 
 export default Thanks;

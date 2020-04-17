@@ -4,8 +4,8 @@ import example from "../img/Screenshot 2020-04-09 at 15.48.29.png"
 import eyes from "../img/eyes.svg"
 import arrow from "../img/arrow.svg"
 import {Link, useHistory} from "react-router-dom";
-import  '../Assets/css/homepage.css';
-import Nav from "./nav";
+import '../Assets/css/homepage.css';
+import Nav from "../components/nav";
 
 const Main = () =>{
     const [joined,setjoined] = useState("");

@@ -3,11 +3,11 @@ import {Switch, Route} from 'react-router-dom';
 
 
 
-import Main from "./components/main";
-import Contact from "./components/contact";
+import Main from "./pages/main";
+import Contact from "./pages/contact";
 import Thanks from "./components/thanks";
 import Cv from "./components/cv";
-import Projects from "./components/projects";
+import Projects from "./pages/projects";
 
 const Routes = () =>{
     return(
