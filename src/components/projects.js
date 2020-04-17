@@ -8,8 +8,8 @@ import work6 from '../img/work6.gif'
 import work7 from '../img/work7.png'
 import work8 from '../img/work8.png'
 import work9 from '../img/work8.jpg'
-import '../Assets/css/projects.css';
 import Nav from "./nav";
+import "../Assets/css/projects.css"
 
 
 function Projects() {

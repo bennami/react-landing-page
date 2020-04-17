@@ -54,7 +54,7 @@ function Nav(props) {
         const burger = document.querySelector(".burger");
         const navLinks = document.querySelectorAll('.nav-links li');
 
-        burger.addEventListener('click', () => {
+
 
 
          //open close nav on mobile
@@ -71,14 +71,13 @@ function Nav(props) {
                 if(link.style.animation){
                     link.style.animation ='';
                 }else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`;
-
+                    link.style.animation = `navLinkFade 0.3s ease forwards ${index / 5 + 0.2}s`;
 
                 }
 
             });
 
-        });
+
 
     };
 
@@ -91,9 +90,10 @@ function Nav(props) {
             <ul className={navClass ? 'nav-links': 'nav-links nav-active'}>
                 {_projects}
                 {_contact}
+                {_homepage}
 
-            </ul>
-            <div className={burgerClass ? 'burger' : 'burger toggle'} onClick={navSlide}>
+            </ul >
+            <div onClick={navSlide} className={burgerClass ? 'burger' : 'burger toggle'} >
                 <div className="line1"/>
                 <div className="line2"/>
                 <div className="line3"/>
