@@ -49,7 +49,7 @@ nav{
     animation-delay: calc(1* var(--stagger-delay));
 }
 
-img{
+.gallery img{
     width: 100%;
     --stagger-delay: 100ms;
     animation: entrance 700ms ease-out;

@@ -42,7 +42,6 @@ const Main = () =>{
 
             <main>
                 <section className="services">
-                    <h2>We should work together</h2>
                     <div className="service-container">
                         <div className="service-img">
                         <img src={example} alt=""/>
@@ -55,10 +54,8 @@ const Main = () =>{
                     </div>
 
                     <div className="service-container2">
-
                         <div className="service-description">
-
-                            <div className={"text"}>Imane graduated in 2017 as a graphic designer. Since then she went on and acquired a second degree in Art education and is currently enrolled in a web development course. Her work is a combination of creativity and socially relevant topics. Imane enjoys combining analogue techniques with new technologies to provide a unique result in her work.<br/> <Link to={"/cv"}>Check out the resume<img src={arrow}/></Link>  </div>
+                            <div className={"text"}>Imane graduated in 2017 as a graphic designer. Since then she went on and acquired a second degree in Art education and is currently enrolled in a web development course. Her work is a combination of creativity and socially relevant topics. Imane enjoys combining analogue techniques with new technologies to provide a unique result in her work.<p><Link to={"/cv"}>Check out the resume<img src={arrow}/></Link> </p>  </div>
                         </div>
                     </div>
 

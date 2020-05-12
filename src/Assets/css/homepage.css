@@ -9,10 +9,10 @@ body {
     padding-bottom: 200px;
     background-color: whitesmoke;
 }
-
+/*
 body *{
     transition: all 300ms ease-in-out ;
-}
+}*/
 
 /*intro section*/
 header{

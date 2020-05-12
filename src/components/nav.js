@@ -53,10 +53,6 @@ function Nav(props) {
     const navSlide =() => {
         const burger = document.querySelector(".burger");
         const navLinks = document.querySelectorAll('.nav-links li');
-
-
-
-
          //open close nav on mobile
             if(!navClass){
                setClass(true);
@@ -72,12 +68,8 @@ function Nav(props) {
                     link.style.animation ='';
                 }else {
                     link.style.animation = `navLinkFade 0.3s ease forwards ${index / 5 + 0.2}s`;
-
                 }
-
             });
-
-
 
     };
 
