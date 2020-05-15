@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Assets/css/homepage.css';
+import './Assets/css/homepage.scss';
+
+
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -9,7 +11,9 @@ import {BrowserRouter} from "react-router-dom";
 ReactDOM.render(
 
       <BrowserRouter>
+
         <App />
+
       </BrowserRouter>,
   document.getElementById('root')
 );

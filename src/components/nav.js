@@ -83,7 +83,6 @@ function Nav(props) {
                 {_projects}
                 {_contact}
                 {_homepage}
-
             </ul >
             <div onClick={navSlide} className={burgerClass ? 'burger' : 'burger toggle'} >
                 <div className="line1"/>

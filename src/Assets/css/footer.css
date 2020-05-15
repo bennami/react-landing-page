@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 60px;
+}
+.footer .footer-title {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-family: "Calibre-Regular", "Helvetica", "sans-serif";
+  font-size: 19px;
+}
+.footer ul {
+  list-style: none;
+}
+
+.footer .social-media__item:not(:last-child) {
+  margin-right: 43px;
+  position: relative;
+}
+
+.footer .social-media__item {
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - (90px * 2));
+  max-width: 1240px;
+  position: relative;
+}
+
+/*# sourceMappingURL=footer.css.map */

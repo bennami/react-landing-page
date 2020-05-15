@@ -1,11 +1,16 @@
 import React,{useState} from "react";
-import home1 from "../img/home1.svg";
+import {DevIcons}  from  "react-icons";
+import {fontAwesome} from "react-icons";
+import {IconContext} from "react-icons"
+import { FaLinkedin, FaInstagram, FaGithub, FaDribbble} from "react-icons/fa"
+
 import example from "../img/Screenshot 2020-04-09 at 15.48.29.png"
 import eyes from "../img/eyes.svg"
 import arrow from "../img/arrow.svg"
 import {Link, useHistory} from "react-router-dom";
-import '../Assets/css/homepage.css';
+import '../Assets/css/homepage.scss';
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Main = () =>{
     const [joined,setjoined] = useState("");
@@ -25,7 +30,7 @@ const Main = () =>{
     return(
         <React.Fragment>
             <Nav/>
-           <header>
+
 
             <div className={"container-intro"}>
                 <div className={"intro-text"}>
@@ -33,12 +38,56 @@ const Main = () =>{
                     <p> I design, code and draw</p>
                   <button className="intro-button"><Link to={"/contact"}>Get in touch </Link></button>
                 </div>
-                <div className={"intro-image"}>
-                <img src= {home1} />
-                </div>
-            </div>
 
-           </header>
+
+
+                   <div className={"container-social"}>
+                       <ul>
+
+                           <li>
+                               <a  target="_blank" rel="noopener noreferrer" href={"https://github.com/bennami"}>
+                                   <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                   <FaGithub/>
+                                   </IconContext.Provider>
+                               </a>
+                           </li>
+                           <li><p>Github</p></li>
+                       </ul>
+                       <ul>
+                           <li>
+                               <a  target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/imane-benyecif-k-87099073/"}>
+                                   <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                   <FaLinkedin/>
+                                   </IconContext.Provider>
+                                </a>
+                           </li>
+                          <li> <p>Linkedin</p></li>
+                       </ul>
+                       <ul>
+                           <li>
+                               <a   target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bennami_/">
+                                   <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                   <FaInstagram/>
+                                   </IconContext.Provider>
+                               </a>
+                           </li>
+                          <li> <p>Instagram</p></li>
+                       </ul>
+                       <ul>
+                           <li>
+                               <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
+                                   <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                       <FaDribbble/>
+                                   </IconContext.Provider>
+                               </a>
+                           </li>
+                           <li> <p>Dribble</p></li>
+                       </ul>
+
+                   </div>
+               </div>
+
+
 
             <main>
                 <section className="services">
@@ -80,6 +129,29 @@ const Main = () =>{
                     </form>
                 </section>
             </main>
+            <footer class="footer">
+                <div class="container">
+                    <h2 class="footer-title">BENNAMI &mdash; 2020</h2>
+
+                    <ul class="social-media">
+                        <li class="social-media__item">
+                            <a href="https://www.instagram.com/bennami_/">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="https://dribbble.com/bennami">
+                                Dribble
+                            </a>
+                        </li>
+                        <li class="social-media__item">
+                            <a href="mail">
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </React.Fragment>
     )
 
