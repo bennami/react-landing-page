@@ -1,5 +1,4 @@
 .card {
-  width: 100%;
   border-radius: 5px;
   box-shadow: #231924;
   background: #833ab4;
@@ -7,6 +6,21 @@
   margin: 1rem;
   display: flex;
   flex-direction: column;
+}
+.card a {
+  cursor: pointer;
+}
+.card a:hover {
+  transform: scale(1.2);
+}
+.card ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  align-items: center;
+}
+.card li {
+  list-style: none;
 }
 .card h3, .card h5 {
   padding: 1rem;

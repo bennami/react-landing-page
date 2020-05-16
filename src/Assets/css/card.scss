@@ -1,5 +1,20 @@
 .card{
-  width: 100%;
+  a{
+    cursor: pointer;
+  }
+  a:hover{
+   transform: scale(1.2);
+  }
+  ul{
+    display: flex;
+    justify-content:space-between;
+    margin-right:1rem;
+    align-items: center;
+  }
+li{
+  list-style: none;
+
+}
   border-radius: 5px;
   box-shadow: #231924  ;
   background: rgb(131,58,180);

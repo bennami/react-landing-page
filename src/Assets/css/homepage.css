@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   margin: 2vh auto;
 }
 .container-intro .intro-button {
@@ -32,7 +32,7 @@ body {
   font-size: xx-large;
   margin: 30vh auto;
   text-align: left;
-  width: 60%;
+  width: 70%;
   justify-content: center;
   height: 100%;
 }
@@ -96,13 +96,23 @@ body {
   padding: 2rem;
   position: relative;
 }
+.services .service-container2 ul {
+  display: flex;
+  padding: 1rem;
+  margin: auto;
+  justify-content: center;
+}
+.services .service-container2 ul li {
+  padding: 0.5rem;
+  list-style: none;
+}
 .services .service-container2 .text {
   text-align: left;
   padding: 2rem;
   border-left: 1px solid whitesmoke;
   display: block;
-  width: 60%;
-  font-size: x-large;
+  width: 70%;
+  font-size: 24px;
   margin: 4rem auto;
 }
 .services .service-container2 .text a {
@@ -169,13 +179,13 @@ body {
     font-size: 1rem;
   }
 
+  .services .service-container2 .text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
   .services .service-container3 {
     grid-template-columns: none;
-  }
-}
-@media (max-width: 900px) {
-  .text {
-    font-size: large;
   }
 }
 
