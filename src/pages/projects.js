@@ -16,7 +16,8 @@ import "../Assets/css/projects.scss"
 
 function Projects() {
     return(
-        <body className={"body"}>
+        <>
+
         <Nav/>
         <div className={'projects-bg'}>
 
@@ -24,19 +25,20 @@ function Projects() {
                 <img src={work11} alt=""/>
                 <img src={work1} alt="alice in wonderland screenprint"/>
                 <img src={work2} alt="poster arabista"/>
-                <img src={work4} alt=" "/>
+                <img src={work4} alt="t "/>
                 <img src={work6} alt="RM gif"/>
-                <img src={work3} alt=""/>
-                <img src={work5} alt=""/>
-                <img src={work7} alt=""/>
-                <img src={work8} alt=""/>
-                <img src={work9} alt=""/>
-                <img src={work10} alt=""/>
+                <img src={work3} alt="y"/>
+                <img src={work5} alt="g"/>
+                <img src={work7} alt="c"/>
+                <img src={work8} alt="t"/>
+                <img src={work9} alt="b"/>
+                <img src={work10} alt="b"/>
 
 
             </section>
         </div>
-        </body>
+
+        </>
     )
 
 };

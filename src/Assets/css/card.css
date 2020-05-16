@@ -1,0 +1,17 @@
+.card {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: #231924;
+  background: #833ab4;
+  background: linear-gradient(90deg, #3b1255 20%, #122768 100%);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card h3, .card h5 {
+  padding: 1rem;
+  color: whitesmoke;
+  display: block;
+}
+
+/*# sourceMappingURL=card.css.map */

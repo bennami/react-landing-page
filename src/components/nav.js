@@ -8,40 +8,45 @@ function Nav(props) {
 
     const [path,setPath] = useState("");
 
+
     window.addEventListener("Load", ()=>{
 
-        if(window.location.pathname === '/contact'){
+        if(window.location.pathname === '/'){
             setPath(window.location.pathname)
         }
 
     });
 
-    const checkPath = () => {
-        history.listen((location) =>{
-            setPath(location.pathname)
-        })
-    };
-
-    useEffect( ()=>{
-        checkPath()
-    }, [checkPath]);
-
-
-    //remove contact and home link if you are on contact page
-    const showContact = path;
     let _contact;
     let _homepage;
     let _projects;
-    if(showContact !== "/contact"){
-        _contact = (<li><Link to ="/contact">Contact</Link></li>)
-    }
-    if(showContact !=="/"){
+
+    useEffect( ()=>{
+        const checkPath = () => {
+            history.listen((location) =>{
+                setPath(location.pathname)
+                if(location.pathname === "/"){
+                    setPath("/")
+                }
+            })
+        };
+
+        checkPath();
+
+    }, [history.location.path,history]);
+
+    console.log(path)
+    //remove contact and home link if you are on contact page
+    if(path !== "/"){
         _homepage = (<li><Link to ="/">Home</Link></li>)
     }
-    if(showContact !=="/projects"){
-        _projects = (<li><Link to={'/projects'}>Projects</Link></li>)
+    if(path !== "/contact"){
+        _contact = (<li><Link to ="/contact">Contact</Link></li>)
     }
 
+    if(path !=="/projects"){
+        _projects = (<li><Link to={'/projects'}>Projects</Link></li>)
+    }
 
 
 

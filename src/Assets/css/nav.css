@@ -29,7 +29,7 @@ a{
     color: #282c34;
 }
 nav a:hover{
-    color: rebeccapurple;
+    color: #723aaa;
 }
 .burger{
     display: none;
@@ -58,7 +58,6 @@ nav a:hover{
         grid-template-rows: 30% 30%;
     }
     nav{
-        position:fixed;
         display: flex;
         width: 100%;
     }
