@@ -11,7 +11,6 @@ function Nav(props) {
     window.addEventListener("Load", ()=>{
 
         if(window.location.pathname === '/contact'){
-
             setPath(window.location.pathname)
         }
 
@@ -20,13 +19,12 @@ function Nav(props) {
     const checkPath = () => {
         history.listen((location) =>{
             setPath(location.pathname)
-
         })
     };
 
     useEffect( ()=>{
         checkPath()
-    }, []);
+    }, [checkPath]);
 
 
     //remove contact and home link if you are on contact page
@@ -35,13 +33,13 @@ function Nav(props) {
     let _homepage;
     let _projects;
     if(showContact !== "/contact"){
-        _contact = (<li><Link to ="/contact">contact</Link></li>)
+        _contact = (<li><Link to ="/contact">Contact</Link></li>)
     }
     if(showContact !=="/"){
-        _homepage = (<li><Link to ="/">home</Link></li>)
+        _homepage = (<li><Link to ="/">Home</Link></li>)
     }
     if(showContact !=="/projects"){
-        _projects = (<li><Link to={'/projects'}>projects</Link></li>)
+        _projects = (<li><Link to={'/projects'}>Projects</Link></li>)
     }
 
 
@@ -80,6 +78,7 @@ function Nav(props) {
         <nav>
             <h3><Link to ="/">BENNAMI</Link></h3>
             <ul className={navClass ? 'nav-links': 'nav-links nav-active'}>
+                <li><Link to={'#about'}>About</Link></li>
                 {_projects}
                 {_contact}
                 {_homepage}

@@ -6,7 +6,6 @@
 body {
     font-family: Lato, sans-serif;
     overflow-x: hidden;
-    padding-bottom: 200px;
     background-color: whitesmoke;
 }
 /*
@@ -25,6 +24,7 @@ body *{
         background-color: rgba(0 ,0, 0, 0);
         border: none;
         margin-top: 2rem;
+        margin-right: 1rem;
     }
 
 }

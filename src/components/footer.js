@@ -6,7 +6,7 @@ const Footer =()=>{
     return(
         <footer className="footer">
             <div className="container">
-                <h2 className="footer-title">BENNAMI &mdash; 2020</h2>
+                <h2 className="footer-title">BENNAMI &mdash; &copy; 2020</h2>
 
                 <ul className="social-media">
                     <li className="social-media__item">

@@ -12,6 +12,7 @@ const Routes = () =>{
     return(
     <Switch>
         <Route exact path="/" component={Main}/>
+        <Route path="/react-portfolio" component={Main}/>
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/thanks/:name" component={Thanks}/>
         <Route exact path="/cv" component={Cv}/>
