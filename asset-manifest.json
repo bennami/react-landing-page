@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.10a23d89.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.347d4678.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.347d4678.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.30f62428.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.b31b2ae8.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.b31b2ae8.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.cb2ef92b.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.cb2ef92b.js.map",
-    "static/js/2.499dd95f.chunk.js": "/react-portfolio/static/js/2.499dd95f.chunk.js",
-    "static/js/2.499dd95f.chunk.js.map": "/react-portfolio/static/js/2.499dd95f.chunk.js.map",
+    "static/js/2.0dbeb023.chunk.js": "/react-portfolio/static/js/2.0dbeb023.chunk.js",
+    "static/js/2.0dbeb023.chunk.js.map": "/react-portfolio/static/js/2.0dbeb023.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.bd5684b1e9b13a2262937cc072bf1e28.js": "/react-portfolio/precache-manifest.bd5684b1e9b13a2262937cc072bf1e28.js",
+    "precache-manifest.a8486df9d02282902ed990443cc900eb.js": "/react-portfolio/precache-manifest.a8486df9d02282902ed990443cc900eb.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
-    "static/css/main.10a23d89.chunk.css.map": "/react-portfolio/static/css/main.10a23d89.chunk.css.map",
-    "static/js/2.499dd95f.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.499dd95f.chunk.js.LICENSE.txt",
+    "static/css/main.30f62428.chunk.css.map": "/react-portfolio/static/css/main.30f62428.chunk.css.map",
+    "static/js/2.0dbeb023.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.0dbeb023.chunk.js.LICENSE.txt",
     "static/media/alice.jpg": "/react-portfolio/static/media/alice.e0c658e3.jpg",
     "static/media/arrow.svg": "/react-portfolio/static/media/arrow.29ecab60.svg",
     "static/media/eyes.svg": "/react-portfolio/static/media/eyes.c13ef27e.svg",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cb2ef92b.js",
-    "static/js/2.499dd95f.chunk.js",
-    "static/css/main.10a23d89.chunk.css",
-    "static/js/main.347d4678.chunk.js"
+    "static/js/2.0dbeb023.chunk.js",
+    "static/css/main.30f62428.chunk.css",
+    "static/js/main.b31b2ae8.chunk.js"
   ]
 }
