@@ -19,14 +19,14 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
   margin: 2vh auto;
 }
 .container-intro .intro-button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   margin-top: 2rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .container-intro .intro-text {
   font-size: xx-large;
@@ -34,6 +34,7 @@ body {
   text-align: left;
   width: 60%;
   justify-content: center;
+  height: 100%;
 }
 .container-intro .intro-text a {
   margin-top: 0.4rem;
@@ -135,12 +136,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding-left: 3rem;
+  text-align: left;
 }
-
+.services .service-container3 .service-description p {
+  display: inline;
+}
+.services .service-container3 .service-description .bigP {
+  font-size: larger;
+  font-weight: bolder;
+}
+.services .service-container3 .service-description a {
+  border-bottom: 1px solid #030202;
+}
 @media only screen and (max-width: 768px) {
   .container-intro {
     grid-template-columns: 1fr;
+    height: 100vh;
   }
 
   .intro-social {
@@ -155,6 +167,10 @@ body {
   .text {
     width: 90vw;
     font-size: 1rem;
+  }
+
+  .services .service-container3 {
+    grid-template-columns: none;
   }
 }
 @media (max-width: 900px) {

@@ -41,7 +41,7 @@ function Nav(props) {
         _homepage = (<li><Link to ="/">Home</Link></li>)
     }
     if(path !== "/contact"){
-        _contact = (<li><Link to ="/contact">Contact</Link></li>)
+        _contact = (<li><a href="#footer">Contact</a></li>)
     }
 
     if(path !=="/projects"){
@@ -83,9 +83,8 @@ function Nav(props) {
         <nav>
             <h3><Link to ="/">BENNAMI</Link></h3>
             <ul className={navClass ? 'nav-links': 'nav-links nav-active'}>
-                <li><Link to={'#about'}>About</Link></li>
+               {/* <li><a href="#about">About</a></li>*/}
                 {_projects}
-                {_contact}
                 {_homepage}
             </ul >
             <div onClick={navSlide} className={burgerClass ? 'burger' : 'burger toggle'} >

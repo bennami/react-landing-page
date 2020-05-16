@@ -19,13 +19,13 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
     margin: 2vh auto;
     .intro-button{
         background-color: rgba(0 ,0, 0, 0);
         border: none;
         margin-top: 2rem;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 
     .intro-text{
@@ -34,6 +34,7 @@ body {
         text-align:left;
         width: 60%;
         justify-content: center;
+        height: 100%;
 
         a{
             margin-top: 0.4rem;
@@ -148,7 +149,21 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 3rem;
+            padding-left: 3rem;
+            text-align: left;
+            p{
+                display: inline;
+            }
+            .bigP{
+                font-size: larger;
+                font-weight: bolder;
+            }
+            a{
+                border-bottom: 1px solid #030202;
+            }
+            a:hover{
+
+            }
         }
     }
 }
@@ -160,6 +175,7 @@ body {
 @media only screen and (max-width: 768px){
     .container-intro{
         grid-template-columns: 1fr;
+        height: 100vh;
     }
     .intro-social{
         visibility: hidden;
@@ -167,11 +183,19 @@ body {
     }
     .intro-text{
         font-size: larger;
+
     }
     .text{
         width: 90vw;
         font-size: 1rem;
     }
+.services{
+    .service-container3{
+        grid-template-columns: none;
+    }
+
+}
+
 
 }
 

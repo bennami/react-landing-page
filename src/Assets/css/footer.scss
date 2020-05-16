@@ -4,6 +4,7 @@
     color:whitesmoke;
 h2{
     padding-left: 0;
+    color: #d0c6c6;
 }
     .footer-title {
         font-weight: 400;
@@ -28,12 +29,15 @@ h2{
 
 .footer .social-media__item {
     display: inline-block;
+
 }
 .container{
-    margin: 0 auto;
-    width: calc(100% - (90px * 2));
-    max-width: 1240px;
+   display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
     position: relative;
+    margin-left: 2vh;
 }
 
 .footer .social-media__item a {
@@ -45,4 +49,19 @@ h2{
 
 .footer .social-media__item a:hover {
     opacity: 1;
+}
+
+@media (max-width: 800px){
+    .footer{
+        ul{
+            margin-top: 2rem;
+            li{
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .container{
+        display: block;
+
+    }
 }
