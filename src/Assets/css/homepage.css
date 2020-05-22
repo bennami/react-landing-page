@@ -19,14 +19,23 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   margin: 2vh auto;
 }
 .container-intro .intro-button {
   background-color: rgba(0, 0, 0, 0);
-  border: none;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-right: 0.5rem;
+  border: 1px solid #24133b;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.container-intro .intro-button:hover {
+  background-color: #24133b;
+  color: whitesmoke;
+}
+.container-intro .intro-button:hover a {
+  color: whitesmoke;
 }
 .container-intro .intro-text {
   font-size: xx-large;
@@ -35,16 +44,6 @@ body {
   width: 70%;
   justify-content: center;
   height: 100%;
-}
-.container-intro .intro-text a {
-  margin-top: 0.4rem;
-  border: 1px solid #24133b;
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-.container-intro .intro-text a:hover {
-  background-color: #24133b;
-  color: whitesmoke;
 }
 .container-intro .intro-social {
   text-align: left;
@@ -73,13 +72,17 @@ body {
 /*main*/
 .services {
   width: 100vw;
-  margin: 0 auto;
+  margin: 7vh auto;
   /*recent projects*/
   /*about section*/
   /* section before footer*/
 }
 .services .service-container1 {
   position: relative;
+}
+.services .service-container1 h2 {
+  width: 90vw;
+  margin: 1.1rem;
 }
 .services .service-container1 .cards {
   width: 90vw;
@@ -162,16 +165,19 @@ body {
 @media only screen and (max-width: 768px) {
   .container-intro {
     grid-template-columns: 1fr;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+  }
+  .container-intro .intro-text {
+    font-size: larger;
+    margin: 2vh auto;
   }
 
   .intro-social {
     visibility: hidden;
     display: none;
-  }
-
-  .intro-text {
-    font-size: larger;
   }
 
   .text {

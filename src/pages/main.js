@@ -72,18 +72,28 @@ const Main = () =>{
             <main>
                 <section className="services">
                     <div className="service-container1">
+
                         <div className={"cards"}>
+                            <h2>Some projects I am currently working on</h2>
                             <Card projectName={"weather app"}
                                   projectDescription={" a beautifully designed site to get the weather for the upcoming 5 days"}
                                   projectLink={"https://bennami.github.io/weather-API/"}
+                                  GithubLink={"https://github.com/bennami/weather-API"}
+                            />
+                            <Card projectName={"Pomodoro timer with to do list"}
+                                  projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
+                                  projectLink={"https://bennami.github.io/pomodoro2"}
+                                  GithubLink={"https://github.com/bennami/pomodoro2"}
                             />
                             <Card projectName={"Poke-dex"}
                                   projectDescription={"The classic poke-dex from the pokemon series in a web app! browse through the entire library of pokemon thanks to the PokeApi"}
-                                  projectLink={"https://bennami.github.io/weather-API/"}
+                                  projectLink={""}
+                                  GithubLink={"https://github.com/bennami/pokephp"}
                             />
                             <Card projectName={"Movie DB"}
-                                  projectDescription={"This websites features a movie Api that lets you browse through a huge library of movies"}
+                                  projectDescription={"This website features a movie Api that lets you browse through a huge library of movies"}
                                   projectLink={"https://bennami.github.io/Movie-browse/#/"}
+                                  GithubLink={"https://github.com/bennami/Movie-browse"}
                             />
                         </div>
                     </div>
@@ -131,7 +141,7 @@ const Main = () =>{
                             </li>
                         </ul>
                         <div className="service-description">
-                            <div className={"text"}>Hi! I'm Imane. I am a web developer and graphic designer. I graduated in 2017 as a graphic designer. Since then, I went on and acquired a second degree in Art education and I am currently enrolled in a super intense web development course.<br/><br/> My work is a combination of analogue and digital  tools, as well as socially relevant topics. I love to work on projects that involve different mediums such as analogue printing and new digital tools. Right now I am focusing on front end frameworks such as React JS, but I have worked with Symfony <FaPhp/> for back end projects, MySQL and many more.<br/><br/> <span>
+                            <div className={"text"}>Hi! I'm Imane. I am a web developer and graphic designer. I graduated in 2017 as a graphic designer. Since then, I went on and acquired a second degree in Art education and I am currently enrolled in a super intense web development course.<br/><br/>I love to work on projects that involve different mediums such as analogue printing and new digital tools. Right now I am focusing on front end frameworks such as React JS, but I have worked with Symfony <FaPhp/> for back end projects, MySQL and many more.<br/><br/> <span>
                                 <Link to={"/projects"}>
                                     Check out some of my work!
                                 </Link>
@@ -145,7 +155,7 @@ const Main = () =>{
                         </div>
                         <div className="service-description">
                             <p className={"bigP"}>I would love to work on your exciting projects!</p>
-                            <p>drop me a <Link to={"/contact"}>line</Link> and let's have a coffee :)</p>
+                            <p>drop me a <Link href={"mailto:info@bennami.com"}>line</Link> and let's have a coffee :)</p>
                         </div>
                     </div>
                 </section>
