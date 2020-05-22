@@ -1,11 +1,6 @@
 import React from "react";
 import {IconContext} from "react-icons"
 import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact} from "react-icons/fa"
-
-
-import work10 from "../img/work10.png"
-import eyes from "../img/eyes.svg"
-import arrow from "../img/arrow.svg"
 import {Link} from "react-router-dom";
 import '../Assets/css/homepage.scss';
 import Nav from "../components/nav";
@@ -22,7 +17,6 @@ const Main = () =>{
                     <h1>Hi, I'm Imane </h1>
                     <p> I design, code and draw</p>
                     <button className="intro-button"><a href="#footer">Get in touch </a></button>
-                    <button className="intro-button"><Link to={"/projects"}>Browse projects </Link></button>
                 </div>
                 <div className={"intro-social"}>
                     <ul>
@@ -155,7 +149,7 @@ const Main = () =>{
                         </div>
                         <div className="service-description">
                             <p className={"bigP"}>I would love to work on your exciting projects!</p>
-                            <p>drop me a <Link href={"mailto:info@bennami.com"}>line</Link> and let's have a coffee :)</p>
+                            <p>drop me a <a href={"mailto:info@bennami.com"}>line</a> and let's have a coffee :)</p>
                         </div>
                     </div>
                 </section>
@@ -163,7 +157,6 @@ const Main = () =>{
             <Footer/>
         </>
     )
-
 };
 
 export default Main;

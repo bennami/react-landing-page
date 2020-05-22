@@ -44,11 +44,6 @@ body {
         width: 70%;
         justify-content: center;
         height: 100%;
-
-        a{
-
-        }
-
     }
 
     .intro-social{
@@ -60,7 +55,6 @@ body {
 
         ul {
             margin-left: 5vh;
-
             align-items: center;
             list-style: none;
             display: flex;
@@ -184,10 +178,6 @@ body {
         }
     }
 }
-
-
-
-
 
 @media only screen and (max-width: 768px){
     .container-intro{
