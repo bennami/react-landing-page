@@ -9,9 +9,18 @@
 }
 .card a {
   cursor: pointer;
+  color: whitesmoke;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 1px;
 }
-.card a:hover {
-  transform: scale(1.2);
+.card a h3 {
+  padding: 1px 0;
+  margin-left: 1rem;
+}
+.card a h3:hover {
+  border-bottom: 1px whitesmoke solid;
+  cursor: pointer;
 }
 .card ul {
   display: flex;

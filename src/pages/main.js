@@ -16,7 +16,7 @@ const Main = () =>{
                 <div className={"intro-text"}>
                     <h1>Hi, I'm Imane </h1>
                     <p> I design, code and draw</p>
-                    <button className="intro-button"><a href="#footer">Get in touch </a></button>
+                    <a className="intro-button" href="#footer">Get in touch </a>
                 </div>
                 <div className={"intro-social"}>
                     <ul>
@@ -26,39 +26,41 @@ const Main = () =>{
                                 <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
                                     <FaGithub/>
                                 </IconContext.Provider>
+                                <p>Github</p>
                             </a>
+
                         </li>
-                        <li><p>Github</p></li>
-                    </ul>
-                    <ul>
+
                         <li>
                             <a  target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/imane-benyecif-k-87099073/"}>
                                 <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
                                     <FaLinkedin/>
                                 </IconContext.Provider>
+                                <p>Linkedin</p>
                             </a>
+
                         </li>
-                        <li> <p>Linkedin</p></li>
-                    </ul>
-                    <ul>
+
+
                         <li>
                             <a   target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bennami_/">
                                 <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
                                     <FaInstagram/>
                                 </IconContext.Provider>
+                                <p>Instagram</p>
                             </a>
+
                         </li>
-                        <li> <p>Instagram</p></li>
-                    </ul>
-                    <ul>
+
                         <li>
                             <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
                                 <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
                                     <FaDribbble/>
                                 </IconContext.Provider>
+                                <p>Dribble</p>
                             </a>
+
                         </li>
-                        <li> <p>Dribble</p></li>
                     </ul>
                 </div>
             </div>
@@ -66,29 +68,42 @@ const Main = () =>{
             <main>
                 <section className="services">
                     <div className="service-container1">
-
+                        <h2>Some projects I am currently working on</h2>
                         <div className={"cards"}>
-                            <h2>Some projects I am currently working on</h2>
+
+                            <Card projectName={"Movie DB"}
+                                  projectDescription={"This website features a movie Api that lets you browse through a huge library of movies"}
+                                  projectLink={"https://bennami.github.io/Movie-browse/#/"}
+                                  GithubLink={"https://github.com/bennami/Movie-browse"}
+                            />
+
                             <Card projectName={"weather app"}
                                   projectDescription={" a beautifully designed site to get the weather for the upcoming 5 days"}
                                   projectLink={"https://bennami.github.io/weather-API/"}
                                   GithubLink={"https://github.com/bennami/weather-API"}
                             />
-                            <Card projectName={"Pomodoro timer with to do list"}
+                            <Card projectName={"Pomodoro"}
                                   projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
                                   projectLink={"https://bennami.github.io/pomodoro2"}
                                   GithubLink={"https://github.com/bennami/pomodoro2"}
                             />
                             <Card projectName={"Poke-dex"}
                                   projectDescription={"The classic poke-dex from the pokemon series in a web app! browse through the entire library of pokemon thanks to the PokeApi"}
-                                  projectLink={""}
+                                  projectLink={"https://pokedexphp.herokuapp.com/"}
                                   GithubLink={"https://github.com/bennami/pokephp"}
                             />
-                            <Card projectName={"Movie DB"}
-                                  projectDescription={"This website features a movie Api that lets you browse through a huge library of movies"}
-                                  projectLink={"https://bennami.github.io/Movie-browse/#/"}
-                                  GithubLink={"https://github.com/bennami/Movie-browse"}
+                            <Card projectName={"Barista bootcamp"}
+                                  projectDescription={'One pager for a barista boot camp'}
+                                  projectLink={"https://bennami.github.io/one-pager-vanilla/"}
+                                  GithubLink={"https://github.com/bennami/one-pager-vanilla"}
                             />
+
+                            <Card projectName={"Guestbook"}
+                                  projectDescription={'simple guestbook feature kept with JSON and PHP'}
+                                  projectLink={"https://guestbookphp.herokuapp.com/"}
+                                  GithubLink={"https://github.com/bennami/guestbook"}
+                            />
+
                         </div>
                     </div>
 

@@ -17,7 +17,7 @@ function Nav(props) {
 
     });
 
-    let _contact;
+
     let _homepage;
     let _projects;
 
@@ -40,9 +40,7 @@ function Nav(props) {
     if(path !== "/"){
         _homepage = (<li><Link to ="/">Home</Link></li>)
     }
-    if(path !== "/contact"){
-        _contact = (<li><a href="#footer">Contact</a></li>)
-    }
+
 
     if(path !=="/projects"){
         _projects = (<li><Link to={'/projects'}>Projects</Link></li>)
@@ -54,7 +52,6 @@ function Nav(props) {
     const [burgerClass, setBurgerClass] = useState(true);
 
     const navSlide =() => {
-        const burger = document.querySelector(".burger");
         const navLinks = document.querySelectorAll('.nav-links li');
          //open close nav on mobile
             if(!navClass){
@@ -82,7 +79,7 @@ function Nav(props) {
     return(
         <nav>
             <h3><Link to ="/">BENNAMI</Link></h3>
-            <ul className={navClass ? 'nav-links': 'nav-links nav-active'}>
+            <ul className= {navClass ? 'nav-links': 'nav-links nav-active'}>
                {/* <li><a href="#about">About</a></li>*/}
                 {_projects}
                 {_homepage}

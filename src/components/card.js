@@ -14,7 +14,7 @@ function Card({projectName,projectDescription,projectLink,GithubLink}) {
                 <ul>
                     <li>
                         <a target="_blank" rel="noopener noreferrer"  href={projectLink}>
-                            <h3>{projectName}</h3>
+                           <h3>{projectName}</h3>
                         </a>
                     </li>
                     <li>
