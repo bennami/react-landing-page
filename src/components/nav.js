@@ -79,7 +79,7 @@ function Nav(props) {
     return(
         <nav>
             <h3><Link to ="/">BENNAMI</Link></h3>
-            <ul className= {navClass ? 'nav-links': 'nav-links nav-active'}>
+            <ul className= {"nav-desktop"}>
                {/* <li><a href="#about">About</a></li>*/}
                 {_projects}
                 {_homepage}
@@ -89,6 +89,11 @@ function Nav(props) {
                 <div className="line2"/>
                 <div className="line3"/>
             </div>
+            <ul className= {navClass ? 'nav-links-mobile': 'nav-links-mobile nav-active-mobile'}>
+               {/* <li><a href="#about">About</a></li>*/}
+                {_projects}
+                {_homepage}
+            </ul >
         </nav>
 
     )

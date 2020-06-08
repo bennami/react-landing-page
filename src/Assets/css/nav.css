@@ -7,7 +7,9 @@ nav{
     justify-content: space-around;
     
 }
-
+.nav-links-mobile{
+    display: none;
+}
 nav h3{
     font-weight: bold;
     letter-spacing: 3px;
@@ -62,7 +64,8 @@ nav a:hover{
         width: 100%;
     }
 
-    .nav-links{
+    .nav-links-mobile{
+        display: block;
         position:fixed;
         height: 30vh;
         top: 8vh;
@@ -82,14 +85,14 @@ nav a:hover{
         display: block;
         cursor: pointer;
     }
-    .nav-links a{
+    .nav-links-mobile a{
         color: whitesmoke;
     }
 
     .nav-links li{
         opacity: 0;
     }
-    .nav-active{
+    .nav-active-mobile{
         transform: translateX(0%);
         transition: transform 0.3s ease-in;
     }
