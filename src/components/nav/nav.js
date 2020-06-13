@@ -1,26 +1,20 @@
 import React, {useEffect, useState} from "react";
 import {Link, useHistory} from "react-router-dom";
-import "../Assets/css/nav.css"
+import "./nav.scss"
 
 function Nav(props) {
 
     const history = useHistory();
-
     const [path,setPath] = useState("");
 
-
     window.addEventListener("Load", ()=>{
-
         if(window.location.pathname === '/'){
             setPath(window.location.pathname)
         }
-
     });
-
 
     let _homepage;
     let _projects;
-
     useEffect( ()=>{
         const checkPath = () => {
             history.listen((location) =>{
@@ -29,10 +23,8 @@ function Nav(props) {
                     setPath("/")
                 }
             })
-        };
-
+        }
         checkPath();
-
     }, [history.location.path,history]);
 
     console.log(path)
@@ -40,12 +32,9 @@ function Nav(props) {
     if(path !== "/"){
         _homepage = (<li><Link to ="/">Home</Link></li>)
     }
-
-
     if(path !=="/projects"){
         _projects = (<li><Link to={'/projects'}>Projects</Link></li>)
     }
-
 
 
     const [navClass, setClass] = useState(true);
@@ -72,8 +61,6 @@ function Nav(props) {
             });
 
     };
-
-
 
 
     return(

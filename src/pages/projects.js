@@ -1,16 +1,16 @@
 import React from "react";
-import work1 from '../img/alice.jpg'
-import work2 from '../img/posterarabista.jpg'
-import work3 from '../img/work3.png'
-import work4 from '../img/work4.png'
-import work5 from '../img/work5.gif'
-import work6 from '../img/work6.gif'
-import work7 from '../img/work7.png'
-import work8 from '../img/work8.png'
-import work9 from '../img/work8.jpg'
-import work10 from '../img/work10.png'
-import work11 from '../img/work11.png'
-import Nav from "../components/nav";
+import work1 from '../Assets/img/alice.jpg'
+import work2 from '../Assets/img/posterarabista.jpg'
+import work3 from '../Assets/img/work3.png'
+import work4 from '../Assets/img/work4.png'
+import work5 from '../Assets/img/work5.gif'
+import work6 from '../Assets/img/work6.gif'
+import work7 from '../Assets/img/work7.png'
+import work8 from '../Assets/img/work8.png'
+import work9 from '../Assets/img/work8.jpg'
+import work10 from '../Assets/img/work10.png'
+import work11 from '../Assets/img/work11.png'
+import Nav from "../components/nav/nav";
 import "../Assets/css/projects.scss"
 
 

@@ -22,6 +22,9 @@ body {
   height: 100%;
   margin: 2vh auto;
 }
+.container-intro p {
+  margin-bottom: 2rem;
+}
 .container-intro .intro-button {
   background-color: rgba(0, 0, 0, 0);
   margin-top: 1.5rem;
@@ -29,6 +32,7 @@ body {
   border: 1px solid #24133b;
   padding: 0.5rem;
   border-radius: 5px;
+  font-size: large;
 }
 .container-intro .intro-button:hover {
   background-color: #24133b;
@@ -150,7 +154,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-image: url("../../img/work10.png");
+  background-image: url("../img/work10.png");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;

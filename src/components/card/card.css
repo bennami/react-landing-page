@@ -1,8 +1,7 @@
 .card {
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: #231924;
-  background: #833ab4;
-  background: linear-gradient(90deg, #3b1255 20%, #122768 100%);
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@
   margin-left: 1rem;
 }
 .card a h3:hover {
-  border-bottom: 1px whitesmoke solid;
+  text-decoration: underline;
   cursor: pointer;
 }
 .card ul {

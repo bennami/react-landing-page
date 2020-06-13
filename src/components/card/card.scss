@@ -11,13 +11,11 @@
      margin-left: 1rem;
     }
     h3:hover{
-      border-bottom: 1px whitesmoke solid;
+      text-decoration: underline;
       cursor: pointer;
     }
   }
-  a:hover{
 
-  }
   ul{
     display: flex;
     justify-content:space-between;
@@ -30,8 +28,6 @@ li{
 }
   border-radius: 5px;
   box-shadow: #231924  ;
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgb(59, 18, 85) 20%, rgb(18, 39, 104) 100%);
 h3,h5{
   padding: 1rem;
   color: whitesmoke;
