@@ -10,7 +10,7 @@ import Card from "../components/card/card";
 const Main = () =>{
 
     //randomize card colors
-    const colors=['#ba4246','#ff8f57','#7a4060','#342f74', '#3e023e'];
+    const colors=['#ba426c','#ff8f57','#7a4060','#342f74', '#3e023e'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
     return(
@@ -81,23 +81,29 @@ const Main = () =>{
                                   GithubLink={"https://github.com/bennami/Movie-browse"}
                                   bgColor={colors[0]}
                             />
+                            <Card projectName={"Simple portfolio"}
+                                  projectDescription={'simple responsive portfolio for Jason'}
+                                  projectLink={"https://bennami.github.io/portfolio-site-with-grid/"}
+                                  GithubLink={"https://bennami.github/portfolio-site-with-grid/"}
+                                  bgColor={colors[1]}
+                            />
 
                             <Card projectName={"Workshop overview"}
                                   projectLink={"https://bennami.github.io/workshop-react"}
                                   GithubLink={"https://github.com/bennami/workshop-react"}
-                                  bgColor={colors[1]}
+                                  bgColor={colors[2]}
                                   projectDescription={"Website created to serve as a guide during a workshop"}
                             />
 
                             <Card projectName={"weather app"}
                                   projectDescription={" a beautifully designed site to get the weather for the upcoming 5 days"}
-                                  bgColor={colors[2]}
+                                  bgColor={colors[3]}
                                   projectLink={"https://bennami.github.io/weather-API/"}
                                   GithubLink={"https://github.com/bennami/weather-API"}
                             />
                             <Card projectName={"Pomodoro"}
                                   projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
-                                  bgColor={colors[3]}
+                                  bgColor={colors[4]}
                                   projectLink={"https://bennami.github.io/pomodoro2"}
                                   GithubLink={"https://github.com/bennami/pomodoro2"}
                             />
@@ -105,20 +111,20 @@ const Main = () =>{
                                   projectDescription={"The classic poke-dex from the pokemon series in a web app! browse through the entire library of pokemon thanks to the PokeApi"}
                                   projectLink={"https://pokedexphp.herokuapp.com/"}
                                   GithubLink={"https://github.com/bennami/pokephp"}
-                                  bgColor={colors[4]}
+                                  bgColor={colors[0]}
                             />
                             <Card projectName={"Barista bootcamp"}
                                   projectDescription={'One pager for a barista boot camp'}
                                   projectLink={"https://bennami.github.io/one-pager-vanilla/"}
                                   GithubLink={"https://github.com/bennami/one-pager-vanilla"}
-                                  bgColor={colors[0]}
+                                  bgColor={colors[1]}
                             />
 
                             <Card projectName={"Guestbook"}
                                   projectDescription={'simple guestbook feature kept with JSON and PHP'}
                                   projectLink={"https://guestbookphp.herokuapp.com/"}
                                   GithubLink={"https://github.com/bennami/guestbook"}
-                                  bgColor={colors[1]}
+                                  bgColor={colors[2]}
                             />
 
                         </div>

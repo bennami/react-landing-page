@@ -9,18 +9,15 @@ body {
     background-color: whitesmoke;
 }
 
-.nav-dark{
-    background: #231924;
-}
-
-
 /*intro section*/
 .container-intro {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100vw;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90vw;
+    height: 85vh;
     margin: 2vh auto;
+
     p{
         margin-bottom: 2rem;
     }
@@ -32,6 +29,7 @@ body {
         padding: 0.5rem;
         border-radius: 5px;
         font-size: large;
+        width: fit-content;
     }
     .intro-button:hover{
         a{
@@ -43,32 +41,29 @@ body {
 
     .intro-text{
         font-size: xx-large;
-        margin: 30vh auto;
-        text-align:left;
-        width: 70%;
+        margin: 2vh 4vw;
+        text-align: left;
+        width: 100%;
         justify-content: center;
-        height: 100%;
+        height: max-content;
     }
 
     .intro-social{
-        text-align:left;
-        margin: 30vh auto;
+        margin: 2vh auto;
         border-left: 1px solid black ;
         width: 100%;
         justify-content: left;
+        height: max-content;
 
         ul {
             margin-left: 5vh;
             padding-top: 20px;
             list-style: none;
-            display: flex;
-            text-align: left;
-            flex-direction: column;
+
 
             li {
                 display: flex;
-                padding-left: 0.5rem;
-                padding-bottom:0.4rem ;
+                padding-left: 1rem;
                 align-content: center;
                 text-align: center;
                 a{
@@ -82,16 +77,13 @@ body {
             }
             li:hover{
                 cursor: pointer;
-                transform: scale(1.1);
+                transform: scale(1.05);
 
             }
         }
     }
 
 }
-
-
-
 
 /*main*/
 .services{
@@ -103,21 +95,23 @@ body {
 
         h2{
             width: 90vw;
-            margin: 1.1rem;
-            padding-left: 3rem;
+            margin-left: 2rem;
+            font-size: 0.7rem;
+            color: #232426;
         }
 
         .cards{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             width: 90vw;
-            margin: 2vh auto;
+            margin: 0.5rem 1rem;
         }
         position: relative;
         img{
             width: 20%;
         }
     }
+
     /*about section*/
     .service-container2{
         ul{
@@ -199,6 +193,7 @@ body {
 }
 
 @media (max-width: 1000px){
+
     .services{
         .service-container1{
             .cards{
@@ -211,16 +206,25 @@ body {
 
 @media only screen and (max-width: 800px){
     .container-intro{
-        grid-template-columns: 1fr;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10vh auto;
+        height: 100vh;
+
+        p{
+            margin-bottom: 0;
+        }
         .intro-text{
             font-size: larger;
-            margin: 2vh auto;
-
-
+            margin: 2vh 4vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .intro-button{
+            background-color: #24133b;
+            border:  1px  solid #24133b;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: large;
+            color: whitesmoke;
         }
     }
     .intro-social{

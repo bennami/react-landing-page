@@ -10,16 +10,13 @@ body {
   background-color: whitesmoke;
 }
 
-.nav-dark {
-  background: #231924;
-}
-
 /*intro section*/
 .container-intro {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  width: 100vw;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 85vh;
   margin: 2vh auto;
 }
 .container-intro p {
@@ -33,6 +30,7 @@ body {
   padding: 0.5rem;
   border-radius: 5px;
   font-size: large;
+  width: fit-content;
 }
 .container-intro .intro-button:hover {
   background-color: #24133b;
@@ -43,31 +41,27 @@ body {
 }
 .container-intro .intro-text {
   font-size: xx-large;
-  margin: 30vh auto;
+  margin: 2vh 4vw;
   text-align: left;
-  width: 70%;
+  width: 100%;
   justify-content: center;
-  height: 100%;
+  height: max-content;
 }
 .container-intro .intro-social {
-  text-align: left;
-  margin: 30vh auto;
+  margin: 2vh auto;
   border-left: 1px solid black;
   width: 100%;
   justify-content: left;
+  height: max-content;
 }
 .container-intro .intro-social ul {
   margin-left: 5vh;
   padding-top: 20px;
   list-style: none;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
 }
 .container-intro .intro-social ul li {
   display: flex;
-  padding-left: 0.5rem;
-  padding-bottom: 0.4rem;
+  padding-left: 1rem;
   align-content: center;
   text-align: center;
   transform: scale(1);
@@ -80,7 +74,7 @@ body {
 }
 .container-intro .intro-social ul li:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /*main*/
@@ -96,14 +90,15 @@ body {
 }
 .services .service-container1 h2 {
   width: 90vw;
-  margin: 1.1rem;
-  padding-left: 3rem;
+  margin-left: 2rem;
+  font-size: 0.7rem;
+  color: #232426;
 }
 .services .service-container1 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 90vw;
-  margin: 2vh auto;
+  margin: 0.5rem 1rem;
 }
 .services .service-container1 img {
   width: 20%;
@@ -187,15 +182,25 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .container-intro {
-    grid-template-columns: 1fr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10vh auto;
+    height: 100vh;
+  }
+  .container-intro p {
+    margin-bottom: 0;
   }
   .container-intro .intro-text {
     font-size: larger;
-    margin: 2vh auto;
+    margin: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-intro .intro-button {
+    background-color: #24133b;
+    border: 1px solid #24133b;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: large;
+    color: whitesmoke;
   }
 
   .intro-social {
