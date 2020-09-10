@@ -7,6 +7,7 @@ import '../Assets/css/homepage.scss';
 import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
 import Card from "../components/card/card";
+import portrait from '../Assets/img/portrait site-01.png'
 
 const Main = () =>{
 
@@ -22,6 +23,9 @@ const Main = () =>{
                     <h1>Hi, I'm Imane </h1>
                     <p> I design, code and draw</p>
                     <button className="intro-button"><Link to={'/projects'} ><span>Projects</span> </Link></button>
+                </div>
+                <div className={"intro-image"}>
+                    <img  style={{ height: "60vh"}} src={portrait} alt=""/>
                 </div>
 
             </div>

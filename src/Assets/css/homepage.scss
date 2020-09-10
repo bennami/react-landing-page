@@ -45,12 +45,18 @@ body {
     }
 
     .intro-text{
-        font-size: xx-large;
+        font-size: 3rem;
         margin: 2vh 4vw;
         text-align: left;
         width: 100%;
         justify-content: center;
         height: max-content;
+        p{
+            margin-top: 0.5rem;
+        }
+    }
+    .intro-image{
+        width: 100%;
     }
 
 }
@@ -206,6 +212,7 @@ body {
 
 @media only screen and (max-width: 800px){
     .container-intro{
+        display: block;
         height: 100vh;
 
         p{
@@ -227,7 +234,14 @@ body {
             color: whitesmoke;
             span{
                 color: white;
+
             }
+        }
+        .intro-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
     }
 
