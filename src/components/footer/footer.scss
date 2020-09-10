@@ -1,18 +1,40 @@
 .footer{
     background: #231924;
     color: #d9cece;
-    padding: 7vh 0  7vh 0;
-    .footer-title {
-        font-weight: 200;
-        font-size: 16px;
+    padding: 6vh 0  6vh 0;
+    h4 {
+        font-weight: 400;
+        letter-spacing: 2px;
+        opacity: 0.8;
     }
-
+    p{
+        margin-top: 0.5rem;
+        opacity: 0.5;
+    }
     ul{
         list-style: none;
         li{
             a{
                 color: #d9cece;
             }
+        }
+    }
+    .intro-social{
+        ul{
+            display: flex;
+            li{
+                padding-right: 0.5rem;
+                a{
+                    svg{
+                        opacity: 0.5;
+                    }
+                    svg:hover{
+                        opacity: 1;
+                    }
+                }
+
+            }
+
         }
     }
 }

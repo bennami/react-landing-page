@@ -1,5 +1,5 @@
 main{
-    background-color: whitesmoke;
+    background-color: #fdf6e9;
 }
 
 
@@ -9,7 +9,7 @@ main{
 }
 
 nav{
-    background-color: whitesmoke;
+    background-color: #fdf6e9;
 }
 
 .gallery{
@@ -44,7 +44,7 @@ nav{
     }
 }
 
-.gallery:nth-child(*){
+.gallery:nth-child(n){
 
     animation-delay: calc(1* var(--stagger-delay));
 }

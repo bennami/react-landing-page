@@ -5,7 +5,7 @@ nav{
     padding-top: 10px;
     margin: 0 auto;
     justify-content: space-around;
-    
+
 }
 .nav-links-mobile{
     display: none;
@@ -68,7 +68,6 @@ nav a:hover{
     }
 
     .nav-links-mobile{
-        display: block;
         position:fixed;
         height: 30vh;
         top: 8vh;

@@ -1,6 +1,7 @@
 import React from "react";
 import {IconContext} from "react-icons"
-import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact} from "react-icons/fa"
+import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact, FaPython, FaVuejs, } from "react-icons/fa"
+import {AiOutlineSmile} from "react-icons/ai"
 import {Link} from "react-router-dom";
 import '../Assets/css/homepage.scss';
 import Nav from "../components/nav/nav";
@@ -11,7 +12,7 @@ const Main = () =>{
 
     //randomize card colors
     const colors=['#ba426c','#ff8f57','#7a4060','#342f74', '#3e023e'];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    //const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
     return(
         <>
@@ -20,53 +21,9 @@ const Main = () =>{
                 <div className={"intro-text"}>
                     <h1>Hi, I'm Imane </h1>
                     <p> I design, code and draw</p>
-                    <a className="intro-button" href="#footer">Get in touch </a>
+                    <button className="intro-button"><Link to={'/projects'} ><span>Projects</span> </Link></button>
                 </div>
-                <div className={"intro-social"}>
-                    <ul>
 
-                        <li>
-                            <a  target="_blank" rel="noopener noreferrer" href={"https://github.com/bennami"}>
-                                <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                    <FaGithub/>
-                                </IconContext.Provider>
-                                <p>Github</p>
-                            </a>
-
-                        </li>
-
-                        <li>
-                            <a  target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/imane-benyecif-k-87099073/"}>
-                                <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                    <FaLinkedin/>
-                                </IconContext.Provider>
-                                <p>Linkedin</p>
-                            </a>
-
-                        </li>
-
-
-                        <li>
-                            <a   target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bennami_/">
-                                <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                    <FaInstagram/>
-                                </IconContext.Provider>
-                                <p>Instagram</p>
-                            </a>
-
-                        </li>
-
-                        <li>
-                            <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
-                                <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                    <FaDribbble/>
-                                </IconContext.Provider>
-                                <p>Dribble</p>
-                            </a>
-
-                        </li>
-                    </ul>
-                </div>
             </div>
 
             <main>
@@ -139,6 +96,16 @@ const Main = () =>{
                             </li>
                             <li>
                                 <IconContext.Provider value={{ style: {fontSize: '25px'}}}>
+                                    <FaVuejs/>
+                                </IconContext.Provider>
+                            </li>
+                            <li>
+                                <IconContext.Provider value={{ style: {fontSize: '25px'}}}>
+                                    <FaPython/>
+                                </IconContext.Provider>
+                            </li>
+                            <li>
+                                <IconContext.Provider value={{ style: {fontSize: '25px'}}}>
                                     <FaPhp/>
                                 </IconContext.Provider></li>
                             <li>
@@ -173,9 +140,9 @@ const Main = () =>{
                             </li>
                         </ul>
                         <div className="service-description">
-                            <div className={"text"}>Hi! I'm Imane. I am a web developer and graphic designer. I graduated in 2017 as a graphic designer. Since then, I went on and acquired a second degree in Art education and I am currently enrolled in a super intense web development course.<br/><br/>I love to work on projects that involve different mediums such as analogue printing and new digital tools. Right now I am focusing on front end frameworks such as React JS, but I have worked with Symfony <FaPhp/> for back end projects, MySQL and many more.<br/><br/> <span>
+                            <div className={"text"}>Hi! I'm Imane. I am a web developer and graphic designer. I graduated in 2017 as a graphic designer. Since then, I went on and acquired a second degree in Art education and I enrolled in a super intense web development boot camp that gave me the opportunity to work as a web developer for a very cool start up in Antwerp.<br/><br/>I love to work on projects that involve different mediums such as analogue printing and new digital tools. Right now I am focusing on front end frameworks such as React and Vue Js, but I have worked with Symfony <FaPhp/> and Django <FaPython/> for back end projects, MySQL, PostgreSQL and many more.<br/><br/> <span>
                                 <Link to={"/projects"}>
-                                    Check out some of my work!
+                                    Check out some of my work if you are curious!
                                 </Link>
                             </span>
                             </div>
@@ -187,7 +154,56 @@ const Main = () =>{
                         </div>
                         <div className="service-description">
                             <p className={"bigP"}>I would love to work on your exciting projects!</p>
-                            <p>drop me a <a href={"mailto:info@bennami.com"}>line</a> and let's have a coffee :)</p>
+                            <div className={"second-line-text"}>
+                            <p>drop me a <a href={"mailto:info@bennami.com"}>line</a> and let's have a coffee</p>
+                            <IconContext.Provider value={{ style: { marginLeft: "4px",fontSize: '1.2rem', color: "black", alignContent: "baseline"}}}>
+                                <AiOutlineSmile/>
+                            </IconContext.Provider>
+                            </div>
+                            <div className={"intro-social"}>
+                                <ul>
+
+                                    <li>
+                                        <a  target="_blank" rel="noopener noreferrer" href={"https://github.com/bennami"}>
+                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                                <FaGithub/>
+                                            </IconContext.Provider>
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        <a  target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/imane-benyecif-k-87099073/"}>
+                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                                <FaLinkedin/>
+                                            </IconContext.Provider>
+
+                                        </a>
+
+                                    </li>
+
+
+                                    <li>
+                                        <a   target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bennami_/">
+                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                                <FaInstagram/>
+                                            </IconContext.Provider>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
+                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                                <FaDribbble/>
+                                            </IconContext.Provider>
+
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </section>
