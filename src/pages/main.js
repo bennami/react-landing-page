@@ -1,6 +1,7 @@
 import React from "react";
+import {useState} from "react";
 import {IconContext} from "react-icons"
-import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact, FaPython, FaVuejs, } from "react-icons/fa"
+import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact, FaPython, FaVuejs, FaArrowUp } from "react-icons/fa"
 import {AiOutlineSmile} from "react-icons/ai"
 import {Link} from "react-router-dom";
 import '../Assets/css/homepage.scss';
@@ -8,6 +9,9 @@ import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
 import Card from "../components/card/card";
 import portrait from '../Assets/img/portrait site-01.png'
+import Projects from "./projects";
+import {useSpring, animated} from 'react-spring';
+
 
 const Main = () =>{
 
@@ -15,9 +19,39 @@ const Main = () =>{
     const colors=['#ba426c','#ff8f57','#7a4060','#342f74', '#3e023e'];
     //const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
+
+
+    const [, setY] = useSpring(() => ({ y: 0 }))
+
+    // show/hide back to top
+    const [showScroll, setShowScroll] = useState(false)
+    const checkScrollTop = () => {
+        if (!showScroll && window.pageYOffset > 800){
+            setShowScroll(true)
+        } else if (showScroll && window.pageYOffset <= 800){
+            setShowScroll(false)
+        }
+    };
+    window.addEventListener('scroll', checkScrollTop)
+
     return(
         <>
             <Nav className={"nav-dark"}/>
+            <button
+                className={"back-to-top"}
+                onClick={() => {
+                    setY({
+                        y: 0,
+                        reset: true,
+                        from: { y: window.scrollY },
+                        onFrame: props => window.scroll(0, props.y)
+                    })
+                }}
+                style={{zIndex:1, position: "fixed", bottom: 1, right: 2, marginBottom: 10, marginRight:10, display: showScroll ? 'flex' : 'none'}}>
+                <IconContext.Provider value={{ style: {fontSize: '20px'}}}>
+                <FaArrowUp/>
+                </IconContext.Provider>
+            </button>
             <div className={"container-intro"}>
                 <div className={"intro-text"}>
                     <h1>Hi, I'm Imane </h1>
@@ -31,65 +65,46 @@ const Main = () =>{
             </div>
 
             <main>
+                <Projects/>
                 <section className="services">
-                    <div className="service-container1">
-                        <h2>Some projects I am currently working on</h2>
-                        <div className={"cards"}>
+                    {/*<div className="service-container1">*/}
+                    {/*    <h2>Some projects I am currently working on</h2>*/}
+                    {/*    <div className={"cards"}>*/}
 
-                            <Card projectName={"Movie DB"}
-                                  projectDescription={"This website features a movie Api that lets you browse through a huge library of movies"}
-                                  projectLink={"https://bennami.github.io/Movie-browse/#/"}
-                                  GithubLink={"https://github.com/bennami/Movie-browse"}
-                                  bgColor={colors[0]}
-                            />
-                            <Card projectName={"Simple portfolio"}
-                                  projectDescription={'simple responsive portfolio for Jason'}
-                                  projectLink={"https://bennami.github.io/portfolio-site-with-grid/"}
-                                  GithubLink={"https://bennami.github/portfolio-site-with-grid/"}
-                                  bgColor={colors[1]}
-                            />
 
-                            <Card projectName={"Workshop overview"}
-                                  projectLink={"https://bennami.github.io/workshop-react"}
-                                  GithubLink={"https://github.com/bennami/workshop-react"}
-                                  bgColor={colors[2]}
-                                  projectDescription={"Website created to serve as a guide during a workshop"}
-                            />
 
-                            <Card projectName={"weather app"}
-                                  projectDescription={" a beautifully designed site to get the weather for the upcoming 5 days"}
-                                  bgColor={colors[3]}
-                                  projectLink={"https://bennami.github.io/weather-API/"}
-                                  GithubLink={"https://github.com/bennami/weather-API"}
-                            />
-                            <Card projectName={"Pomodoro"}
-                                  projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
-                                  bgColor={colors[4]}
-                                  projectLink={"https://bennami.github.io/pomodoro2"}
-                                  GithubLink={"https://github.com/bennami/pomodoro2"}
-                            />
-                            <Card projectName={"Poke-dex"}
-                                  projectDescription={"The classic poke-dex from the pokemon series in a web app! browse through the entire library of pokemon thanks to the PokeApi"}
-                                  projectLink={"https://pokedexphp.herokuapp.com/"}
-                                  GithubLink={"https://github.com/bennami/pokephp"}
-                                  bgColor={colors[0]}
-                            />
-                            <Card projectName={"Barista bootcamp"}
-                                  projectDescription={'One pager for a barista boot camp'}
-                                  projectLink={"https://bennami.github.io/one-pager-vanilla/"}
-                                  GithubLink={"https://github.com/bennami/one-pager-vanilla"}
-                                  bgColor={colors[1]}
-                            />
 
-                            <Card projectName={"Guestbook"}
-                                  projectDescription={'simple guestbook feature kept with JSON and PHP'}
-                                  projectLink={"https://guestbookphp.herokuapp.com/"}
-                                  GithubLink={"https://github.com/bennami/guestbook"}
-                                  bgColor={colors[2]}
-                            />
 
-                        </div>
-                    </div>
+
+                    {/*        <Card projectName={"weather app"}*/}
+                    {/*              projectDescription={" a beautifully designed site to get the weather for the upcoming 5 days"}*/}
+                    {/*              bgColor={colors[3]}*/}
+                    {/*              projectLink={"https://bennami.github.io/weather-API/"}*/}
+                    {/*              GithubLink={"https://github.com/bennami/weather-API"}*/}
+                    {/*        />*/}
+
+                    {/*        <Card projectName={"Poke-dex"}*/}
+                    {/*              projectDescription={"The classic poke-dex from the pokemon series in a web app! browse through the entire library of pokemon thanks to the PokeApi"}*/}
+                    {/*              projectLink={"https://pokedexphp.herokuapp.com/"}*/}
+                    {/*              GithubLink={"https://github.com/bennami/pokephp"}*/}
+                    {/*              bgColor={colors[0]}*/}
+                    {/*        />*/}
+                    {/*        <Card projectName={"Barista bootcamp"}*/}
+                    {/*              projectDescription={'One pager for a barista boot camp'}*/}
+                    {/*              projectLink={"https://bennami.github.io/one-pager-vanilla/"}*/}
+                    {/*              GithubLink={"https://github.com/bennami/one-pager-vanilla"}*/}
+                    {/*              bgColor={colors[1]}*/}
+                    {/*        />*/}
+
+                    {/*        <Card projectName={"Guestbook"}*/}
+                    {/*              projectDescription={'simple guestbook feature kept with JSON and PHP'}*/}
+                    {/*              projectLink={"https://guestbookphp.herokuapp.com/"}*/}
+                    {/*              GithubLink={"https://github.com/bennami/guestbook"}*/}
+                    {/*              bgColor={colors[2]}*/}
+                    {/*        />*/}
+
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                     <div className="service-container2"  id={"about"}>
                         <ul>

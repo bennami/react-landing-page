@@ -61,6 +61,21 @@ body {
 
 }
 
+.back-to-top{
+    background-color: #24133b;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 0.3rem;
+    border: none;
+
+    svg{
+        vertical-align: bottom;
+    }
+}
+.back-to-top:hover{
+    cursor: pointer;
+}
+
 /*main*/
 .services{
     width: 100vw;
