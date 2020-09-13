@@ -1,5 +1,6 @@
 main{
     background-color: #fdf6e9;
+    overflow: hidden;
 }
  .project{
      width: 100%;
@@ -17,7 +18,7 @@ nav{
 .gallery{
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
     width:100%;
     gap: 2rem;
     align-items: center;
