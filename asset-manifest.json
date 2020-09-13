@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b9da7c9.chunk.css",
+    "main.css": "/static/css/main.a74ee38a.chunk.css",
     "main.js": "/static/js/main.bb793422.chunk.js",
     "main.js.map": "/static/js/main.bb793422.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.84cfcdfc.js",
@@ -8,9 +8,9 @@
     "static/js/2.31815d0a.chunk.js": "/static/js/2.31815d0a.chunk.js",
     "static/js/2.31815d0a.chunk.js.map": "/static/js/2.31815d0a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9edb4da4621c2535acb179267a92fbfd.js": "/precache-manifest.9edb4da4621c2535acb179267a92fbfd.js",
+    "precache-manifest.60e8a5ccb2ec3a2cc6a7f5f6bca5dcde.js": "/precache-manifest.60e8a5ccb2ec3a2cc6a7f5f6bca5dcde.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8b9da7c9.chunk.css.map": "/static/css/main.8b9da7c9.chunk.css.map",
+    "static/css/main.a74ee38a.chunk.css.map": "/static/css/main.a74ee38a.chunk.css.map",
     "static/js/2.31815d0a.chunk.js.LICENSE.txt": "/static/js/2.31815d0a.chunk.js.LICENSE.txt",
     "static/media/OS-2019-gif-.gif": "/static/media/OS-2019-gif-.78bcfa23.gif",
     "static/media/gif cards.gif": "/static/media/gif cards.e284d461.gif",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.84cfcdfc.js",
     "static/js/2.31815d0a.chunk.js",
-    "static/css/main.8b9da7c9.chunk.css",
+    "static/css/main.a74ee38a.chunk.css",
     "static/js/main.bb793422.chunk.js"
   ]
 }
