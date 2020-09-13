@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import Main from "./pages/main";
 import Contact from "./pages/contact";
 import Cv from "./components/cv/cv";
-import Projects from "./pages/projects";
+import Projects from "./pages/Projects";
 import PageNotFound from "./pages/pageNotFound";
 
 const Routes = () =>{

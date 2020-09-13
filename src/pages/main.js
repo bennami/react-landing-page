@@ -9,7 +9,7 @@ import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
 import Card from "../components/card/card";
 import portrait from '../Assets/img/portrait site-01.png'
-import Projects from "./projects";
+import ProjectGallery from "./ProjectGallery";
 import {useSpring, animated} from 'react-spring';
 
 
@@ -65,7 +65,7 @@ const Main = () =>{
             </div>
 
             <main>
-                <Projects/>
+                <ProjectGallery/>
                 <section className="services">
                     {/*<div className="service-container1">*/}
                     {/*    <h2>Some projects I am currently working on</h2>*/}

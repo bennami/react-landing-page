@@ -1,41 +1,25 @@
-import React, {useEffect, useState} from "react";
-import {Link, useHistory} from "react-router-dom";
+import React, {useState} from "react";
+import {Link,} from "react-router-dom";
 import "./nav.scss"
 
 function Nav(props) {
 
-    const history = useHistory();
-    const [path,setPath] = useState("");
+    const [path] = useState(window.location.pathname);
 
-    window.addEventListener("Load", ()=>{
-        if(window.location.pathname === '/'){
-            setPath(window.location.pathname)
-        }
-    });
 
     let _homepage;
     let _projects;
-    useEffect( ()=>{
-        const checkPath = () => {
-            history.listen((location) =>{
-                setPath(location.pathname)
-                if(location.pathname === "/"){
-                    setPath("/")
-                }
-            })
-        }
-        checkPath();
-    }, [history.location.path,history]);
 
-    console.log(path)
-    //remove contact and home link if you are on contact page
+
+    console.log(window.location.pathname)
+
+    //remove contact and home link if you are on contact page or vice versa
     if(path !== "/"){
         _homepage = (<li><Link to ="/">Home</Link></li>)
     }
     if(path !=="/projects"){
         _projects = (<li><Link to={'/projects'}>Projects</Link></li>)
     }
-
 
     const [navClass, setClass] = useState(true);
     const [burgerClass, setBurgerClass] = useState(true);

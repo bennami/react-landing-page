@@ -4,11 +4,15 @@ import {FaGithub} from "react-icons/all";
 
 import {IconContext} from "react-icons";
 
-function Card({projectName,projectDescription,projectLink,GithubLink,bgColor}) {
+function Card({projectName,projectDescription,projectLink,GithubLink,bgColor,bgImage}) {
 
     return(
 
-        <div className={'card'} style={{backgroundColor: `${bgColor}`}} >
+        <div className={'card'} style={{backgroundColor: `${bgColor}`,
+            backgroundImage: `url(${bgImage})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"}}
+        >
             <div>
 
                 <ul>
@@ -27,7 +31,6 @@ function Card({projectName,projectDescription,projectLink,GithubLink,bgColor}) {
                 </ul>
 
             </div>
-
             <h5>{projectDescription}</h5>
         </div>
 
