@@ -9,7 +9,7 @@ import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
 import Card from "../components/card/card";
 import portrait from '../Assets/img/portrait site-01.png'
-import ProjectGallery from "./ProjectGallery";
+import ProjectGallery from "../components/ProjectGallery";
 import {useSpring, animated} from 'react-spring';
 
 
@@ -56,7 +56,51 @@ const Main = () =>{
                 <div className={"intro-text"}>
                     <h1>Hi, I'm Imane </h1>
                     <p> I design, code and draw</p>
-                    <button className="intro-button"><Link to={'/projects'} ><span>Projects</span> </Link></button>
+                    <div className={"intro-social"}>
+                        <ul>
+
+                            <li>
+                                <a  target="_blank" rel="noopener noreferrer" href={"https://github.com/bennami"}>
+                                    <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                        <FaGithub/>
+                                    </IconContext.Provider>
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a  target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/imane-benyecif-k-87099073/"}>
+                                    <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                        <FaLinkedin/>
+                                    </IconContext.Provider>
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+                                <a   target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bennami_/">
+                                    <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                        <FaInstagram/>
+                                    </IconContext.Provider>
+
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
+                                    <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
+                                        <FaDribbble/>
+                                    </IconContext.Provider>
+
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    {/*<button className="intro-button"><Link to={'/projects'} ><span>Projects</span> </Link></button>*/}
                 </div>
                 <div className={"intro-image"}>
                     <img  style={{ height: "60vh"}} src={portrait} alt=""/>
@@ -67,45 +111,6 @@ const Main = () =>{
             <main>
                 <ProjectGallery/>
                 <section className="services">
-                    {/*<div className="service-container1">*/}
-                    {/*    <h2>Some projects I am currently working on</h2>*/}
-                    {/*    <div className={"cards"}>*/}
-
-
-
-
-
-
-                    {/*        <Card projectName={"weather app"}*/}
-                    {/*              projectDescription={" a beautifully designed site to get the weather for the upcoming 5 days"}*/}
-                    {/*              bgColor={colors[3]}*/}
-                    {/*              projectLink={"https://bennami.github.io/weather-API/"}*/}
-                    {/*              GithubLink={"https://github.com/bennami/weather-API"}*/}
-                    {/*        />*/}
-
-                    {/*        <Card projectName={"Poke-dex"}*/}
-                    {/*              projectDescription={"The classic poke-dex from the pokemon series in a web app! browse through the entire library of pokemon thanks to the PokeApi"}*/}
-                    {/*              projectLink={"https://pokedexphp.herokuapp.com/"}*/}
-                    {/*              GithubLink={"https://github.com/bennami/pokephp"}*/}
-                    {/*              bgColor={colors[0]}*/}
-                    {/*        />*/}
-                    {/*        <Card projectName={"Barista bootcamp"}*/}
-                    {/*              projectDescription={'One pager for a barista boot camp'}*/}
-                    {/*              projectLink={"https://bennami.github.io/one-pager-vanilla/"}*/}
-                    {/*              GithubLink={"https://github.com/bennami/one-pager-vanilla"}*/}
-                    {/*              bgColor={colors[1]}*/}
-                    {/*        />*/}
-
-                    {/*        <Card projectName={"Guestbook"}*/}
-                    {/*              projectDescription={'simple guestbook feature kept with JSON and PHP'}*/}
-                    {/*              projectLink={"https://guestbookphp.herokuapp.com/"}*/}
-                    {/*              GithubLink={"https://github.com/bennami/guestbook"}*/}
-                    {/*              bgColor={colors[2]}*/}
-                    {/*        />*/}
-
-                    {/*    </div>*/}
-                    {/*</div>*/}
-
                     <div className="service-container2"  id={"about"}>
                         <ul>
                             <li>
@@ -174,10 +179,11 @@ const Main = () =>{
                         <div className="service-description">
                             <p className={"bigP"}>I would love to work on your exciting projects!</p>
                             <div className={"second-line-text"}>
-                            <p>drop me a <a href={"mailto:info@bennami.com"}>line</a> and let's have a coffee</p>
+                            <p>drop me a <a href={"mailto:info@bennami.com"}>line</a> and let's have a coffee
                             <IconContext.Provider value={{ style: { marginLeft: "4px",fontSize: '1.2rem', color: "black", alignContent: "baseline"}}}>
                                 <AiOutlineSmile/>
                             </IconContext.Provider>
+                            </p>
                             </div>
                             <div className={"intro-social"}>
                                 <ul>

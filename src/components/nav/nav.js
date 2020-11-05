@@ -54,6 +54,8 @@ function Nav(props) {
                {/* <li><a href="#about">About</a></li>*/}
                 {_projects}
                 {_homepage}
+                <li><Link to ="/contact">Contact</Link></li>
+                {/*<li><Link to ="/lab">gallery</Link></li>*/}
             </ul >
             <div onClick={navSlide} className={burgerClass ? 'burger' : 'burger toggle'} >
                 <div className="line1"/>
@@ -64,6 +66,7 @@ function Nav(props) {
                {/* <li><a href="#about">About</a></li>*/}
                 {_projects}
                 {_homepage}
+                <li><Link to ="/contact">Contact</Link></li>
             </ul >
         </nav>
 

@@ -7,6 +7,7 @@ function Projects() {
     return(
         <>
             <Nav/>
+            <h1>A collection of screenshots during the process of making</h1>
             <ProjectGallery/>
             <Footer/>
         </>
