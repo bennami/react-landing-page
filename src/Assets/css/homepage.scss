@@ -11,19 +11,22 @@ body {
 
 /*intro section*/
 .container-intro {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    grid-template-areas: "text img";
     align-items: center;
     justify-content: center;
-    width:90vw;
-    height: 85vh;
+    width:100vw;
     margin: 2vh auto;
 
     h1{
         font-family:  'Playfair Display', serif;
     }
     p{
-
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        font-size: smaller;
     }
     .intro-button{
         background-color: rgba(0 ,0, 0, 0);
@@ -31,10 +34,9 @@ body {
         margin-right: 0.5rem;
         border:  1px  solid #231924;
         padding: 0.5rem;
+        font-size: 1rem;
         border-radius: 5px;
-        font-size: large;
         width: fit-content;
-
     }
     .intro-button:hover{
         a{
@@ -45,17 +47,22 @@ body {
     }
 
     .intro-text{
+        grid-area: text;
         font-size: 3rem;
         margin: 2vh 4vw;
-        text-align: left;
-        width: 100%;
+
         justify-content: center;
         height: max-content;
+        place-self: center;
+        place-items: center;
+        width: auto;
+        text-align: center;
         p{
             margin-top: 0.5rem;
         }
     }
     .intro-image{
+        grid-area: img;
         width: 100%;
         text-align: center;
     }
@@ -228,8 +235,10 @@ body {
 
 @media only screen and (max-width: 800px){
     .container-intro{
-        display: block;
-        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1em;
+        grid-template-areas: "text" "img";
 
         p{
             margin-bottom: 0;
@@ -242,16 +251,7 @@ body {
             align-items: center;
         }
         .intro-button{
-            background-color: #231924;
-            border:  1px  solid #231924;
-            padding: 0.5rem;
-            border-radius: 5px;
-            font-size: large;
-            color: whitesmoke;
-            span{
-                color: white;
-
-            }
+           display: none;
         }
         .intro-image{
             display: flex;

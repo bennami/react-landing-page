@@ -19,52 +19,59 @@ import znaCards from "../Assets/img/gif cards.gif"
 import girl from "../Assets/img/girllllll.gif"
 import il from '../Assets/img/il (4).jpg'
 import "../Assets/css/projects.scss"
+import Soup from "../Assets/img/soup.png"
+import pomodoro from "../Assets/img/pomodoro.png"
+import react from "../Assets/img/react.gif"
 import Card from "../components/card/card";
+import Masonry from "masonry-layout"
 
 
 function ProjectGallery() {
-    const colors=['#ba426c','#ff8f57','#7a4060','#342f74', '#3e023e'];
+    const colors=['#ba426c','#ff8f57','#231924','#342f74', '#3e023e'];
+
     return(
         <>
         <div className={'projects-bg'}>
 
             <div className={"gallery"}>
-                <div className={"project"}>
+                <div className={"project two-rows"}>
                     <div className={"project-image"}>
-                    <img src={work11} alt=""/>
+                    <img src={work11} alt="mvc-model"/>
                     </div>
                     <div className={"project-title"}>
 
                     </div>
                 </div>
-                <div className={"project"}>
+                <div className={"project two-rows"}>
                     <div className={"project-image"}>
-                        <img src={tatjana} alt="poster arabista"/>
-                    </div>
-                    <div className={"project-title"}>
-
-                    </div>
-                </div>
-
-                <div className={"project"}>
-
-                    <div className={"project-image"}>
-                        <img src={typod} alt="poster arabista"/>
+                        <img src={tatjana} alt="tatjana"/>
                     </div>
                     <div className={"project-title"}>
 
                     </div>
                 </div>
 
-                <Card projectName={"Simple portfolio"}
-                      projectDescription={'simple responsive portfolio for Jason'}
-                      projectLink={"https://bennami.github.io/portfolio-site-with-grid/"}
-                      GithubLink={"https://bennami.github/portfolio-site-with-grid/"}
+                <div className={"project two-rows"}>
+
+                    <div className={"project-image"}>
+                        <img src={typod} alt="d-typo"/>
+                    </div>
+                    <div className={"project-title"}>
+
+                    </div>
+                </div>
+
+                <Card extraClass={"three-rows"}
+                      projectName={"Soupsip workshop"}
+                      projectDescription={'Website made as part of an educational workshop. Locally made soups to warm your heart'}
+                      projectLink={"https://soupsip.netlify.app/"}
+                      GithubLink={"https://github.com/bennami/soupsip-empty"}
                       bgColor={colors[1]}
+                      image={Soup}
                 />
 
 
-                <div className={"project"}>
+                <div className={"project three-rows"}>
                     <div className={"project-image"}>
                         <img src={work2} alt="poster arabista"/>
                     </div>
@@ -73,82 +80,76 @@ function ProjectGallery() {
                     </div>
                 </div>
 
-                <div className={"project"}>
+                <div className={"project two-rows"}>
                     <div className={"project-image"}>
-                        <img src={gif} alt="poster arabista"/>
+                        <img src={gif} alt="2019"/>
                     </div>
                     <div className={"project-title"}>
 
                     </div>
                 </div>
 
-                <div className={"project"}>
-                    <a href="https://bennami.github.io/Movie-browse/#/" target={"_blank noopener noreferrer"}>
-                    <div className={"project-image"}>
-                        <img src={movie} alt="poster arabista"/>
-                    </div>
-                    <div className={"project-title"}>
+                <Card
+                    extraClass={"three-rows"}
+                    projectName={"Movie DB"}
+                      projectDescription={'This website features a movie Api that lets you browse through a huge library of movies'}
+                      projectLink={"https://bennami.github.io/Movie-browse/#/"}
+                      GithubLink={"https://github.com/bennami/Movie-browse"}
+                      bgColor={colors[3]}
+                      image={movie}
+                />
 
-                    </div>
-                    </a>
-                </div>
-                {/*<Card projectName={"Movie DB"}*/}
-                {/*      projectDescription={"This website features a movie Api that lets you browse through a huge library of movies"}*/}
-                {/*      projectLink={"https://bennami.github.io/Movie-browse/#/"}*/}
-                {/*      GithubLink={"https://github.com/bennami/Movie-browse"}*/}
-                {/*      bgImage={movie}*/}
-                {/*/>*/}
-                <div className={"project"}>
+                <div className={"project two-rows"}>
                     <div className={"project-image"}>
-                        <img src={work6} alt="poster arabista"/>
+                        <img src={work6} alt="rhythmic mobility"/>
                     </div>
                     <div className={"project-title"}>
 
                     </div>
                 </div>
 
-                <div className={"project"}>
+                <div className={"project two-rows"}>
                     <div className={"project-image"}>
-                        <img src={work3} alt="poster arabista"/>
+                        <img src={work3} alt="n-typo"/>
                     </div>
                     <div className={"project-title"}>
 
                     </div>
                 </div>
 
-                <img src={work7} alt="c"/>
-                <div className={"project"}>
-                    <div className={"project-image"}>
-                        <img src={wotcBanner} alt="alice in wonderland screenprint"/>
+                <img className={"three-rows"} src={work7} alt="burger-man"/>
+
+                <div className={"project two-rows"}>
+                    <div className={"project-image  "}>
+                        <img src={wotcBanner} alt="wotc"/>
                     </div>
                     <div className={"project-title"}>
 
                     </div>
                 </div>
-                <img src={work5} alt="g"/>
 
-                <img src={il} alt="g"/>
+                <img className={"two-rows"} src={work5} alt="bouncing ball"/>
 
-
-
+                <img  className={"two-rows"}  src={il} alt="moviescreens"/>
 
 
-                <Card projectName={"Workshop overview"}
+                <Card
+                extraClass={"three-rows"}
+                    projectName={"React hooks"}
                       projectLink={"https://bennami.github.io/workshop-react"}
                       GithubLink={"https://github.com/bennami/workshop-react"}
                       bgColor={colors[2]}
                       projectDescription={"Website created to serve as a guide during a workshop"}
+                image={react}
                 />
-                <div className={"project"}>
+                <div className={"project  two-rows"}>
                     <div className={"project-image"}>
-                        <img src={girl} alt="poster arabista"/>
-                    </div>
-                    <div className={"project-title"}>
-                        <p></p>
+                        <img src={girl} alt="gif-girl"/>
                     </div>
                 </div>
-                <img src={work8} alt="t"/>
-                <div className={"project"}>
+                <img className={"three-rows"} src={work8} alt="take a look into the future"/>
+
+                <div className={"project three-rows"}>
                     <div className={"project-image"}>
                         <img src={znaCards} alt="poster arabista"/>
                     </div>
@@ -156,34 +157,41 @@ function ProjectGallery() {
                         <p></p>
                     </div>
                 </div>
-                <img src={work9} alt="b"/>
-                <div className={"project"}>
-                    <div className={"project-image"}>
-                        <img src={typoe} alt="poster arabista"/>
+                <img className={"three-rows"} src={work9} alt="stay-healthy"/>
+                <div className={"project two-rows"}>
+                    <div className={"project-image "}>
+                        <img src={typoe} alt="e-typo"/>
                     </div>
                     <div className={"project-title"}>
                         <p></p>
                     </div>
                 </div>
-                <div className={"project"}>
-                    <div className={"project-image"}>
+
+                <div className={"project three-rows"}>
+                    <div className={"project-image "}>
                         <img src={work1} alt="alice in wonderland screenprint"/>
                     </div>
                     <div className={"project-title"}>
                         <p> </p>
                     </div>
                 </div>
-                <img src={work10} alt="b"/>
-                <Card projectName={"Pomodoro"}
+
+                <img className={"two-rows"} src={work10} alt="what "/>
+
+                <Card extraClass={"three-rows"}
+                    projectName={"Pomodoro"}
                       projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
                       projectLink={"https://bennami.github.io/pomodoro2"}
                       GithubLink={"https://github.com/bennami/pomodoro2"}
-                      bgColor={colors[3]}
+                      bgColor={colors[4]}
+                      image={pomodoro}
                 />
 
 
             </div>
         </div>
+
+
 
         </>
     )
