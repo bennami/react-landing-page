@@ -4,7 +4,7 @@ import {IconContext} from "react-icons";
 import {AiOutlineSmile} from "react-icons/ai/index";
 import {FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaMailBulk} from "react-icons/fa/index";
 import Footer from "../components/footer/footer";
-import '../Assets/css/homepage.scss';
+import '../Assets/css/contact.scss';
 import portrait from "../Assets/img/portrait site-01.png";
 import work10 from "../Assets/img/work10.png"
 
@@ -12,15 +12,15 @@ const Contact = () =>{
     return(
         <>
          <Nav/>
-            <div className={"container-intro"}>
+            <div className={"container-contact"}>
                 <div className={"intro-text"}>
-                    <h3>I would love to work on your exciting projects!</h3>
-                    <p>drop me a <a href={"mailto:info@bennami.com"}>line</a> and let's have a coffee
+                    <h2>I would love to work on your exciting projects!</h2>
+                    <p>drop me a <a style={{textDecoration:"underline"}} href={"mailto:info@bennami.com"}>line</a> and let's have a coffee
                         <IconContext.Provider value={{ style: { marginLeft: "4px",fontSize: '1.2rem', color: "black", alignContent: "baseline",verticalAlign: "middle"}}}>
                             <AiOutlineSmile/>
                         </IconContext.Provider>
                     </p>
-                    <div className={"intro-social"}>
+                    <div  className={"intro-social"}>
                         <ul>
 
                             <li>
