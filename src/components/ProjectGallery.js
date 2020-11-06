@@ -25,22 +25,30 @@ import pomodoro from "../Assets/img/pomodoro.png"
 import react from "../Assets/img/react.gif"
 import wash from "../Assets/img/wash-your-hands.jpg"
 import Card from "./card/card";
-import Footer from "./footer/footer";
-import Nav from "./nav/nav";
+import LazyLoad from 'react-lazy-load';
+
 const Image = (props) =>{
     const colors=['#ba426c','#ff8f57','#231924','#342f74', '#3e023e'];
     return (
         <>
             <div className="container-mason">
+                <LazyLoad>
                 <img className={"mason"} src={wotcBanner} alt=""/>
+                </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={wash} alt=""/>
+                </LazyLoad>
+
+                <LazyLoad>
                 <img className={"mason"} src={work2} alt=""/>
-
-
-
-
+                </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work6} alt=""/>
+                </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work1} alt=""/>
+                </LazyLoad>
+                <LazyLoad>
                 <Card extraClass={"mason"}
                       projectName={"Soupsip workshop"}
                       projectDescription={'Website made as part of an educational workshop. Locally made soups to warm your heart'}
@@ -49,14 +57,26 @@ const Image = (props) =>{
                       bgColor={colors[1]}
                       image={Soup}
                 />
-
+                </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={znaCards} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={typod} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={typoe} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work5} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={tatjana} alt=""/>
-
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work7} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <Card
                     extraClass={"mason"}
                     projectName={"React hooks"}
@@ -66,10 +86,22 @@ const Image = (props) =>{
                     projectDescription={"Website created to serve as a guide during a workshop"}
                     image={react}
                 />
+                    </LazyLoad>
+
+                <LazyLoad>
                 <img className={"mason"} src={work3} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work8} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={gif} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work9} alt=""/>
+                    </LazyLoad>
+
+                <LazyLoad>
                 <Card
                     extraClass={"mason"}
                     projectName={"Movie DB"}
@@ -79,11 +111,21 @@ const Image = (props) =>{
                     bgColor={colors[3]}
                     image={movie}
                 />
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work10} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work11} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={il} alt=""/>
+                    </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={girl} alt=""/>
+                    </LazyLoad>
 
+                <LazyLoad>
                 <Card extraClass={"mason"}
                       projectName={"Pomodoro"}
                       projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
@@ -92,6 +134,7 @@ const Image = (props) =>{
                       bgColor={colors[4]}
                       image={pomodoro}
                 />
+                    </LazyLoad>
 
 
             </div>
