@@ -19,17 +19,17 @@ img{
   justify-content: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .container-mason{
     column-count: 1;
   }
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 600px){
   .container-mason{
     column-count: 2;
   }
 }
-@media screen and (min-width: 900px){
+@media screen and (min-width: 768px){
   .container-mason{
     column-count: 3;
   }

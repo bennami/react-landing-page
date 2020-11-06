@@ -103,7 +103,7 @@ const Main = () =>{
                     {/*<button className="intro-button"><Link to={'/projects'} ><span>Projects</span> </Link></button>*/}
                 </div>
                 <div className={"intro-image"}>
-                    <img  style={{ height: "60vh"}} src={portrait} alt=""/>
+                    <img src={portrait} alt=""/>
                 </div>
 
             </div>

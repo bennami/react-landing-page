@@ -49,16 +49,6 @@ nav a:hover{
 }
 
 @media only screen and (max-width: 800px){
-    .service-container{
-        display: grid;
-        width: 90%;
-        text-align: center;
-        margin: 2rem auto;
-    }
-    .container-intro{
-        grid-template-columns: 1fr;
-        grid-template-rows: 30% 30%;
-    }
     nav{
         display: flex;
         width: 100%;
