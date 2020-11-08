@@ -2,10 +2,9 @@ import React from "react";
 import Nav from "../components/nav/nav";
 import {IconContext} from "react-icons";
 import {AiOutlineSmile} from "react-icons/ai/index";
-import {FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaMailBulk} from "react-icons/fa/index";
+import {FaDribbble, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa/index";
 import Footer from "../components/footer/footer";
 import '../Assets/css/contact.scss';
-import portrait from "../Assets/img/portrait site-01.png";
 import work10 from "../Assets/img/work10.png"
 
 const Contact = () =>{

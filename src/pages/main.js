@@ -1,22 +1,23 @@
 import React from "react";
 import {useState} from "react";
 import {IconContext} from "react-icons"
-import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact, FaPython, FaVuejs, FaArrowUp } from "react-icons/fa"
+import { FaLinkedin, FaInstagram, FaGithub, FaDribbble,FaPhp,FaSymfony,FaHtml5,FaCss3,FaDatabase,FaSass,FaJs,FaReact, FaPython, FaVuejs,} from "react-icons/fa"
 import {AiOutlineSmile} from "react-icons/ai"
 import {Link} from "react-router-dom";
 import '../Assets/css/homepage.scss';
 import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
-import Card from "../components/card/card";
+
 import portrait from '../Assets/img/portrait site-01.png'
 import ProjectGallery from "../components/ProjectGallery";
-import {useSpring, animated} from 'react-spring';
+import {useSpring,} from 'react-spring';
+import arrow from '../Assets/img/arrow.svg'
 
 
 const Main = () =>{
 
     //randomize card colors
-    const colors=['#ba426c','#ff8f57','#7a4060','#342f74', '#3e023e'];
+    //const colors=['#ba426c','#ff8f57','#7a4060','#342f74', '#3e023e'];
     //const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 
@@ -48,9 +49,7 @@ const Main = () =>{
                     })
                 }}
                 style={{zIndex:1, position: "fixed", bottom: 1, right: 2, marginBottom: 10, marginRight:10, display: showScroll ? 'flex' : 'none'}}>
-                <IconContext.Provider value={{ style: {fontSize: '20px'}}}>
-                <FaArrowUp/>
-                </IconContext.Provider>
+                <i><img style={{transform: 'rotate(-90deg)',marginLeft:'0',margin:'0.2rem;'}} src={arrow} alt=""/></i>
             </button>
             <div className={"container-intro"}>
                 <div className={"intro-text"}>
@@ -100,7 +99,6 @@ const Main = () =>{
                             </li>
                         </ul>
                     </div>
-                    {/*<button className="intro-button"><Link to={'/projects'} ><span>Projects</span> </Link></button>*/}
                 </div>
                 <div className={"intro-image"}>
                     <img src={portrait} alt=""/>
@@ -164,9 +162,12 @@ const Main = () =>{
                             </li>
                         </ul>
                         <div className="service-description">
-                            <div className={"text"}>Hi! I'm Imane. I am a web developer and graphic designer. I graduated in 2017 as a graphic designer. Since then, I went on and acquired a second degree in Art education and I enrolled in a super intense web development boot camp that gave me the opportunity to work as a web developer for a very cool start up in Antwerp.<br/><br/>I love to work on projects that involve different mediums such as analogue printing and new digital tools. Right now I am focusing on front end frameworks such as React and Vue Js, but I have worked with Symfony <FaPhp/> and Django <FaPython/> for back end projects, MySQL, PostgreSQL and many more.<br/><br/> <span>
+                            <div className={"text"}>Hi! I'm Imane. I am a web developer and graphic designer. I graduated in 2017 as a graphic designer. Since then, I acquired a second degree in Art education and I enrolled in a super intense web development bootcamp that gave me the opportunity to work as a web developer for a very cool start up in Antwerp.<br/><br/>I love to work on projects that involve different mediums such as analogue printing and new digital tools. Right now I am focusing on front end development with frameworks like React and Vue Js, but I have experience in back end development,having worked with frameworks like Symfony <FaPhp/> and Django <FaPython/>
+                            <br/>
+                            <br/>
+                            <span>
                                 <Link to={"/projects"}>
-                                    Check out some of my work if you are curious!
+                                    Check out some of my work if you are curious! <i><img src={arrow} alt=""/></i>
                                 </Link>
                             </span>
                             </div>
@@ -185,50 +186,7 @@ const Main = () =>{
                             </IconContext.Provider>
                             </p>
                             </div>
-                            <div className={"intro-social"}>
-                                <ul>
 
-                                    <li>
-                                        <a  target="_blank" rel="noopener noreferrer" href={"https://github.com/bennami"}>
-                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                                <FaGithub/>
-                                            </IconContext.Provider>
-                                        </a>
-
-                                    </li>
-
-                                    <li>
-                                        <a  target="_blank" rel="noopener noreferrer" href={"https://www.linkedin.com/in/imane-benyecif-k-87099073/"}>
-                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                                <FaLinkedin/>
-                                            </IconContext.Provider>
-
-                                        </a>
-
-                                    </li>
-
-
-                                    <li>
-                                        <a   target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bennami_/">
-                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                                <FaInstagram/>
-                                            </IconContext.Provider>
-
-                                        </a>
-
-                                    </li>
-
-                                    <li>
-                                        <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
-                                            <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                                <FaDribbble/>
-                                            </IconContext.Provider>
-
-                                        </a>
-
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </section>

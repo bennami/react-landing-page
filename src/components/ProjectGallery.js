@@ -68,6 +68,17 @@ const Image = (props) =>{
                 <img className={"mason"} src={typoe} alt=""/>
                     </LazyLoad>
                 <LazyLoad>
+                    <Card
+                        extraClass={"mason"}
+                        projectName={"React hooks"}
+                        projectLink={"https://bennami.github.io/workshop-react"}
+                        GithubLink={"https://github.com/bennami/workshop-react"}
+                        bgColor={colors[2]}
+                        projectDescription={"Website created to serve as a guide during a workshop"}
+                        image={react}
+                    />
+                </LazyLoad>
+                <LazyLoad>
                 <img className={"mason"} src={work5} alt=""/>
                     </LazyLoad>
                 <LazyLoad>
@@ -76,17 +87,7 @@ const Image = (props) =>{
                 <LazyLoad>
                 <img className={"mason"} src={work7} alt=""/>
                     </LazyLoad>
-                <LazyLoad>
-                <Card
-                    extraClass={"mason"}
-                    projectName={"React hooks"}
-                    projectLink={"https://bennami.github.io/workshop-react"}
-                    GithubLink={"https://github.com/bennami/workshop-react"}
-                    bgColor={colors[2]}
-                    projectDescription={"Website created to serve as a guide during a workshop"}
-                    image={react}
-                />
-                    </LazyLoad>
+
 
                 <LazyLoad>
                 <img className={"mason"} src={work3} alt=""/>

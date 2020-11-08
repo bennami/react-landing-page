@@ -67,8 +67,10 @@
 
 @media (max-width: 800px){
     .footer{
+        p{
+            margin-top: 1rem;
+        }
         ul{
-            margin-top: 2rem;
             li{
                 font-size: 0.8rem;
             }
