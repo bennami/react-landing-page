@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "react-app-rewired": "^2.1.6",
+    "webpack-cli": "^4.2.0"
   }
 }

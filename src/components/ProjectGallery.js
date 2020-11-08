@@ -44,11 +44,7 @@ const Image = (props) =>{
                 </LazyLoad>
                 <LazyLoad>
                 <img className={"mason"} src={work6} alt=""/>
-                </LazyLoad>
-                <LazyLoad>
-                <img className={"mason"} src={work1} alt=""/>
-                </LazyLoad>
-                <LazyLoad>
+                </LazyLoad> <LazyLoad>
                 <Card extraClass={"mason"}
                       projectName={"Soupsip workshop"}
                       projectDescription={'Website made as part of an educational workshop. Locally made soups to warm your heart'}
@@ -57,13 +53,15 @@ const Image = (props) =>{
                       bgColor={colors[1]}
                       image={Soup}
                 />
+            </LazyLoad>
+                <LazyLoad>
+                <img className={"mason"} src={work1} alt=""/>
                 </LazyLoad>
+
                 <LazyLoad>
                 <img className={"mason"} src={znaCards} alt=""/>
                     </LazyLoad>
-                <LazyLoad>
-                <img className={"mason"} src={typod} alt=""/>
-                    </LazyLoad>
+
                 <LazyLoad>
                 <img className={"mason"} src={typoe} alt=""/>
                     </LazyLoad>
@@ -78,9 +76,7 @@ const Image = (props) =>{
                         image={react}
                     />
                 </LazyLoad>
-                <LazyLoad>
-                <img className={"mason"} src={work5} alt=""/>
-                    </LazyLoad>
+
                 <LazyLoad>
                 <img className={"mason"} src={tatjana} alt=""/>
                     </LazyLoad>
@@ -88,7 +84,9 @@ const Image = (props) =>{
                 <img className={"mason"} src={work7} alt=""/>
                     </LazyLoad>
 
-
+                <LazyLoad>
+                    <img className={"mason"} src={work10} alt=""/>
+                </LazyLoad>
                 <LazyLoad>
                 <img className={"mason"} src={work3} alt=""/>
                     </LazyLoad>
@@ -101,7 +99,9 @@ const Image = (props) =>{
                 <LazyLoad>
                 <img className={"mason"} src={work9} alt=""/>
                     </LazyLoad>
-
+                <LazyLoad>
+                    <img className={"mason"} src={typod} alt=""/>
+                </LazyLoad>
                 <LazyLoad>
                 <Card
                     extraClass={"mason"}
@@ -113,9 +113,7 @@ const Image = (props) =>{
                     image={movie}
                 />
                     </LazyLoad>
-                <LazyLoad>
-                <img className={"mason"} src={work10} alt=""/>
-                    </LazyLoad>
+
                 <LazyLoad>
                 <img className={"mason"} src={work11} alt=""/>
                     </LazyLoad>
