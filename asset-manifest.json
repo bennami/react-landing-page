@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.7cacaedd.chunk.css",
-    "main.js": "/static/js/main.4b5b8069.chunk.js",
-    "main.js.map": "/static/js/main.4b5b8069.chunk.js.map",
+    "main.css": "/static/css/main.baf759d4.chunk.css",
+    "main.js": "/static/js/main.159c03b6.chunk.js",
+    "main.js.map": "/static/js/main.159c03b6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fdbc59a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.fdbc59a5.js.map",
     "static/js/2.6d16b241.chunk.js": "/static/js/2.6d16b241.chunk.js",
     "static/js/2.6d16b241.chunk.js.map": "/static/js/2.6d16b241.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7cacaedd.chunk.css.map": "/static/css/main.7cacaedd.chunk.css.map",
+    "static/css/main.baf759d4.chunk.css.map": "/static/css/main.baf759d4.chunk.css.map",
     "static/js/2.6d16b241.chunk.js.LICENSE.txt": "/static/js/2.6d16b241.chunk.js.LICENSE.txt",
     "static/media/OS-2019-gif-.987f17ce.gif": "/static/media/OS-2019-gif-.987f17ce.gif",
     "static/media/arrow.91958ce1.svg": "/static/media/arrow.91958ce1.svg",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.fdbc59a5.js",
     "static/js/2.6d16b241.chunk.js",
-    "static/css/main.7cacaedd.chunk.css",
-    "static/js/main.4b5b8069.chunk.js"
+    "static/css/main.baf759d4.chunk.css",
+    "static/js/main.159c03b6.chunk.js"
   ]
 }
