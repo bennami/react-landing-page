@@ -48,7 +48,7 @@ const Image = (props) =>{
             y: -20,
             ease: 'Power4.out',
             stagger:{
-                amount:0.4
+                amount:0.1
             }
         });
     };
@@ -70,7 +70,7 @@ const Image = (props) =>{
 
 
                     <Card
-                        style={{opacity:0}}
+
                         extraClass={"fadeIn5 mason"}
                         projectName={"Movie DB"}
                         projectDescription={'This website features a movie Api that lets you browse through a huge library of movies'}
@@ -82,59 +82,59 @@ const Image = (props) =>{
 
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={wotcBanner} alt=""/>
+                <img   className={"fadeIn5 mason"} src={wotcBanner} alt=""/>
 
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={wash} alt=""/>
+                <img   className={"fadeIn5 mason"} src={wash} alt=""/>
 
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work2} alt=""/>
-
-
-
-
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work6} alt=""/>
+                <img    className={"fadeIn5 mason"} src={work2} alt=""/>
 
 
 
 
-                    <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={tatjana} alt=""/>
+                <img  className={"fadeIn5 mason"} src={work6} alt=""/>
 
 
 
-                    <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={arte} alt=""/>
+
+                    <img   className={"fadeIn5 mason"} src={tatjana} alt=""/>
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work1} alt=""/>
+
+                    <img  className={"fadeIn5 mason"} src={arte} alt=""/>
+
+
+                <img   className={"fadeIn5 mason"} src={work1} alt=""/>
 
 
 
                 {/*//row2*/}
 
-                    <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={binaryMask} alt=""/>
+                    <img  className={"fadeIn5 mason"} src={binaryMask} alt=""/>
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={znaCards} alt=""/>
+                <img   className={"fadeIn5 mason"} src={znaCards} alt=""/>
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={typoe} alt=""/>
-
-
-
+                <img   className={"fadeIn5 mason"} src={typoe} alt=""/>
 
 
 
 
 
-                    <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work7} alt=""/>
+
+
+
+                    <img    className={"fadeIn5 mason"} src={work7} alt=""/>
 
 
 
 
 
-                    <Card  style={{opacity:0}}
+                    <Card
                            extraClass={"fadeIn5 mason"}
                         projectName={"React hooks"}
                         projectLink={"https://bennami.github.io/workshop-react"}
@@ -147,21 +147,21 @@ const Image = (props) =>{
 
 
 
-                    <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work10} alt=""/>
+                    <img    className={"fadeIn5 mason"} src={work10} alt=""/>
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work3} alt=""/>
+                <img   className={"fadeIn5 mason"} src={work3} alt=""/>
 
 
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={gif} alt=""/>
+                <img    className={"fadeIn5 mason"} src={gif} alt=""/>
 
-                <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={work9} alt=""/>
+                <img   className={"fadeIn5 mason"} src={work9} alt=""/>
 
-                    <img  style={{opacity:0}}  className={" fadeIn5 mason"} src={stayHealthy} alt=""/>
+                    <img    className={" fadeIn5 mason"} src={stayHealthy} alt=""/>
 
-                    <img  style={{opacity:0}}  className={"fadeIn5 mason"} src={typod} alt=""/>
+                    <img    className={"fadeIn5 mason"} src={typod} alt=""/>
 
-                    <Card  style={{opacity:0}}  extraClass={"fadeIn5 mason"}
+                    <Card   extraClass={"fadeIn5 mason"}
                           projectName={"Toolsquare"}
                           projectDescription={"A simple landing page for a fresh start up in Antwerp"}
                           projectLink={"https://toolsquare.io"}
@@ -169,7 +169,7 @@ const Image = (props) =>{
 
                     />
 
-                    <Card  style={{opacity:0}}  extraClass={"fadeIn5 mason"}
+                    <Card extraClass={"fadeIn5 mason"}
                           projectName={"Soupsip workshop"}
                           projectDescription={'Website made as part of an educational workshop. Locally made soups to warm your heart'}
                           projectLink={"https://soupsip.netlify.app/"}
@@ -179,9 +179,9 @@ const Image = (props) =>{
                     />
 
 
-                <img   style={{opacity:0}}  className={"fadeIn5 mason"} src={girl} alt=""/>
+                <img     className={"fadeIn5 mason"} src={girl} alt=""/>
 
-                <Card  style={{opacity:0}}  extraClass={"fadeIn5 mason"}
+                <Card extraClass={"fadeIn5 mason"}
                       projectName={"Pomodoro"}
                       projectDescription={"A simple interface that provides a customizable pomodoro timer and to do list"}
                       projectLink={"https://bennami.github.io/pomodoro2"}
