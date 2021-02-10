@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-mason {
+  column-count: 4;
+  column-gap: 1rem;
+  margin: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+.mason {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .container-mason {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container-mason {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container-mason {
+    column-count: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-mason {
+    column-count: 4;
+  }
+}
+
+/*# sourceMappingURL=mason.css.map */

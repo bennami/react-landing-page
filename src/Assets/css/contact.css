@@ -1,0 +1,70 @@
+.container-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1em;
+  grid-template-areas: "text img";
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 2vh auto;
+  height: 71vh;
+}
+.container-contact h1 {
+  font-family: "Gilda Display", serif;
+}
+.container-contact p {
+  margin-bottom: 1rem;
+}
+.container-contact .intro-social {
+  margin-top: 2rem;
+}
+.container-contact .intro-social ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.container-contact .intro-social ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+.container-contact .intro-social ul li a {
+  border-bottom: none;
+}
+.container-contact .intro-social ul li:hover {
+  transform: scale(1.2);
+}
+.container-contact .intro-text {
+  grid-area: text;
+  font-size: 1rem;
+  margin: 2vh 4vw;
+  font-family: "Gilda Display", serif;
+  justify-content: left;
+  height: max-content;
+  place-self: center;
+  place-items: center;
+  width: auto;
+  text-align: left;
+}
+.container-contact .intro-text p {
+  margin-top: 0.5rem;
+}
+.container-contact .intro-image {
+  grid-area: img;
+  width: 100%;
+  text-align: center;
+}
+.container-contact img {
+  width: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .container-contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-template-areas: "text" "img";
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

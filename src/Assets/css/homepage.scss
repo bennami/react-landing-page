@@ -176,10 +176,7 @@ body {
             color: whitesmoke;
 
         }
-        .text a:hover{
-            text-decoration: underline;
 
-        }
     }
 
     /* section before footer*/
@@ -350,4 +347,14 @@ i{
         vertical-align: middle;
         margin-left: 0.5rem;
     }
+}
+
+.ProjectLink{
+a:hover{
+
+        border-bottom: 1px solid white;
+        padding-bottom: 0.5rem;
+
+}
+
 }

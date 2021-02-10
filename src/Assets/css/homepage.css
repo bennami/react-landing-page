@@ -1,80 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Trocchi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  font-family: Lato, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   overflow-x: hidden;
-  background-color: whitesmoke;
+  background-color: #fdf6e9;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*intro section*/
 .container-intro {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1em;
+  grid-template-areas: "text img";
   align-items: center;
   justify-content: center;
-  width: 90vw;
-  height: 85vh;
+  width: 100vw;
   margin: 2vh auto;
 }
+.container-intro h1 {
+  font-family: "Gilda Display", serif;
+}
 .container-intro p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: smaller;
 }
 .container-intro .intro-button {
   background-color: rgba(0, 0, 0, 0);
   margin-top: 1.5rem;
   margin-right: 0.5rem;
-  border: 1px solid #24133b;
+  border: 1px solid #231924;
   padding: 0.5rem;
+  font-size: 1rem;
   border-radius: 5px;
-  font-size: large;
   width: fit-content;
 }
+.container-intro .intro-social {
+  margin-top: 2rem;
+}
+.container-intro .intro-social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-intro .intro-social ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+.container-intro .intro-social ul li a {
+  border-bottom: none;
+}
+.container-intro .intro-social ul li:hover {
+  transform: scale(1.2);
+}
 .container-intro .intro-button:hover {
-  background-color: #24133b;
+  background-color: #231924;
   color: whitesmoke;
 }
 .container-intro .intro-button:hover a {
   color: whitesmoke;
 }
 .container-intro .intro-text {
-  font-size: xx-large;
+  grid-area: text;
+  font-size: 2rem;
   margin: 2vh 4vw;
-  text-align: left;
-  width: 100%;
+  font-family: "Gilda Display", serif;
   justify-content: center;
   height: max-content;
-}
-.container-intro .intro-social {
-  margin: 2vh auto;
-  border-left: 1px solid black;
-  width: 100%;
-  justify-content: left;
-  height: max-content;
-}
-.container-intro .intro-social ul {
-  margin-left: 5vh;
-  padding-top: 20px;
-  list-style: none;
-}
-.container-intro .intro-social ul li {
-  display: flex;
-  padding-left: 1rem;
-  align-content: center;
+  place-self: center;
+  place-items: center;
+  width: auto;
   text-align: center;
-  transform: scale(1);
 }
-.container-intro .intro-social ul li a {
-  display: flex;
+.container-intro .intro-text p {
+  margin-top: 0.5rem;
 }
-.container-intro .intro-social ul li p {
-  padding-left: 1rem;
+.container-intro .intro-image {
+  grid-area: img;
+  width: 80%;
+  text-align: center;
+  padding: 5vw;
 }
-.container-intro .intro-social ul li:hover {
+.container-intro img {
+  width: 70%;
+}
+
+.back-to-top {
+  background-color: #24133b;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.3rem;
+  border: none;
+}
+.back-to-top svg {
+  vertical-align: bottom;
+}
+
+.back-to-top:hover {
   cursor: pointer;
-  transform: scale(1.05);
 }
 
 /*main*/
@@ -106,7 +142,7 @@ body {
 .services .service-container2 {
   width: 100%;
   margin: 2rem auto;
-  background-color: #24133b;
+  background-color: #231924;
   color: whitesmoke;
   padding: 2rem;
   position: relative;
@@ -127,14 +163,12 @@ body {
   border-left: 1px solid whitesmoke;
   display: block;
   width: 70%;
-  font-size: 24px;
-  margin: 4rem auto;
+  font-size: 19px;
+  margin: 2rem auto;
+  line-height: 2rem;
 }
 .services .service-container2 .text a {
   color: whitesmoke;
-}
-.services .service-container2 .text a:hover {
-  text-decoration: underline;
 }
 .services .service-container3 {
   height: 70vh;
@@ -160,19 +194,44 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
+  font-family: "Gilda Display", serif;
   padding-left: 3rem;
   text-align: left;
 }
-.services .service-container3 .service-description p {
-  display: inline;
+.services .service-container3 .service-description p span {
+  vertical-align: center;
+}
+.services .service-container3 .service-description p span svg {
+  vertical-align: center;
 }
 .services .service-container3 .service-description .bigP {
-  font-size: larger;
+  font-size: 1.2rem;
   font-weight: bolder;
+  margin-bottom: 1rem;
 }
 .services .service-container3 .service-description a {
   border-bottom: 1px solid #030202;
+}
+.services .service-container3 .service-description .second-line-text {
+  display: flex;
+}
+.services .service-container3 .service-description .second-line-text p svg {
+  vertical-align: bottom;
+}
+.services .service-container3 .service-description .intro-social ul {
+  display: flex;
+  margin-top: 2rem;
+}
+.services .service-container3 .service-description .intro-social ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+.services .service-container3 .service-description .intro-social ul li a {
+  border-bottom: none;
+}
+.services .service-container3 .service-description .intro-social ul li:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 1000px) {
@@ -180,9 +239,12 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
   .container-intro {
-    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-row-gap: 1em;
+    grid-template-areas: "text" "img";
   }
   .container-intro p {
     margin-bottom: 0;
@@ -195,17 +257,13 @@ body {
     align-items: center;
   }
   .container-intro .intro-button {
-    background-color: #24133b;
-    border: 1px solid #24133b;
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-size: large;
-    color: whitesmoke;
-  }
-
-  .intro-social {
-    visibility: hidden;
     display: none;
+  }
+  .container-intro .intro-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
   }
 
   .text {
@@ -229,6 +287,16 @@ body {
   .services .service-container1 .cards {
     grid-template-columns: 1fr;
   }
+}
+i img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.ProjectLink a:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=homepage.css.map */

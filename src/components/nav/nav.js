@@ -52,8 +52,8 @@ function Nav(props) {
             <h3><Link to ="/">BENNAMI</Link></h3>
             <ul className= {"nav-desktop"}>
                {/* <li><a href="#about">About</a></li>*/}
-                {_projects}
                 {_homepage}
+                {_projects}
                 <li><Link to ="/contact">Contact</Link></li>
                 {/*<li><Link to ="/lab">gallery</Link></li>*/}
             </ul >
@@ -64,8 +64,9 @@ function Nav(props) {
             </div>
             <ul className= {navClass ? 'nav-links-mobile': 'nav-links-mobile nav-active-mobile'}>
                {/* <li><a href="#about">About</a></li>*/}
-                {_projects}
                 {_homepage}
+                {_projects}
+
                 <li><Link to ="/contact">Contact</Link></li>
             </ul >
         </nav>
