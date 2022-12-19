@@ -1,5 +1,4 @@
 import React from "react"
-import footer from "./footer.scss"
 import {IconContext} from "react-icons";
 import {FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaHeart,} from "react-icons/fa/index";
 import {FiMail} from "react-icons/fi/index";

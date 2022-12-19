@@ -1,10 +1,9 @@
 import React from "react";
-
 import "../Assets/css/projects.scss"
 
 
 
-function Moviedb() {
+function Arte() {
 
     return(
         <>
@@ -14,4 +13,4 @@ function Moviedb() {
 
 };
 
-export default Moviedb;
+export default Arte;
