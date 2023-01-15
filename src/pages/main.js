@@ -2,17 +2,17 @@ import React, {useRef, useEffect} from "react";
 import {useIntersection} from "react-use";
 import {useState} from "react";
 import {IconContext} from "react-icons"
-import { FaLinkedin, FaInstagram, FaGithub, FaDribbble} from "react-icons/fa"
+import { FaLinkedin, FaInstagram, FaGithub} from "react-icons/fa"
 import {AiOutlineSmile} from "react-icons/ai"
-// import {Link} from "react-router-dom";
 import '../Assets/css/homepage.scss';
 import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
+import Projects from "../projects/projects";
 import {gsap} from "gsap";
 import portrait from '../Assets/img/portrait.png'
-import ProjectGallery from "../components/ProjectGallery";
 import {useSpring,} from 'react-spring';
 import arrow from '../Assets/img/arrow.svg'
+import contactImage from '../Assets/img/work10.png'
 
 const Main = () =>{
 
@@ -25,7 +25,7 @@ const Main = () =>{
     const intersection = useIntersection(introContainer,{
         root: null,
         rootMargin: '0px',
-        threshold: 0.3
+        threshold: 0.2
     });
     const intersection2 = useIntersection(introContainer2,{
         root: null,
@@ -39,14 +39,12 @@ const Main = () =>{
     });
 
     const fadeIn = (element) =>{
-        gsap.to(element,{opacity:1, y:-30, ease: 'Power4.easeInOut', delay: .2});
+        gsap.to(element,{opacity:1, y:-10, ease: 'Power4.easeInOut', delay: .01});
     };
     const fadeOut = (element) =>{
-        gsap.to(element,{opacity:0, y:-30, ease: 'Power4.easeInOut', delay: .2});
+        gsap.to(element,{opacity:0, y:-10, ease: 'Power4.easeInOut', delay: .01});
     };
 
-
-    //check to see when viewport is visible to user
     intersection && intersection.intersectionRatio < 0.3
     ?fadeOut(".fadeIn")
     :fadeIn(".fadeIn");
@@ -67,7 +65,6 @@ const Main = () =>{
 
     const [, setY] = useSpring(() => ({ y: 0 }));
 
-    // show/hide back to top
     const [showScroll, setShowScroll] = useState(false)
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 800){
@@ -96,8 +93,8 @@ const Main = () =>{
             </button>
             <div className={"container-intro"}>
                 <div style={{opacity:0}}  ref={el => {textItem = el}}  className={"intro-text"}>
-                    <h1>Hi, I'm Iman </h1>
-                    <p> I design, code and draw</p>
+                    <h1>Hi, I'm Imane </h1>
+                    <p> I design, code and draw from Antwerp</p>
                     <div className={"intro-social"}>
                         <ul>
                             <li>
@@ -122,13 +119,6 @@ const Main = () =>{
 
                                 </a>
                             </li>
-                            <li>
-                                <a   target="_blank" rel="noopener noreferrer" href="https://dribbble.com/bennami">
-                                    <IconContext.Provider value={{ style: {fontSize: '25px', color: "black"}}}>
-                                        <FaDribbble/>
-                                    </IconContext.Provider>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -136,8 +126,8 @@ const Main = () =>{
                     <img style={{opacity:0}} ref={el => {logoItem = el}} src={portrait} alt=""/>
                 </div>
             </div>
-
             <main>
+                <Projects/>
                 <section  className="services">
                     <div ref={introContainer}  className="service-container2"  id={"about"}>
                         <div ref={introContainer2} className="service-description">
@@ -156,12 +146,9 @@ const Main = () =>{
                             </div>
                         </div>
                     </div>
-
-
-                    <ProjectGallery />
-
                     <div ref={gallery} className="service-container3">
                         <div className="fadeIn3 service-img">
+                            <img className="contact-image" src={contactImage} alt="illustration of an island"></img>
                         </div>
                         <div className="fadeIn3 service-description">
                             <p className={"bigP"}>I would love to work on your exciting projects!</p>

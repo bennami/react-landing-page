@@ -9,13 +9,8 @@
     src:  url('../fonts/archia-regular-webfont.woff2') format('woff2'),
           url('../fonts/archia-regular-webfont.woff') format('woff');
   }
-
-html{
-    height: 100%;
-}
 body {
     font-family: "Archia",sans-serif;
-    
     background-color: var(--bg-color);
     min-height: 100%;
     display: flex;
@@ -33,6 +28,9 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
 
+h1{
+    font-family: 'Archia', serif;
+}
 /*intro section*/
 .container-intro {
     display: grid;
@@ -42,19 +40,11 @@ body {
     grid-template-areas: "text img";
     align-items: center;
     justify-content: center;
-    width:100vw;
     margin-top: 6rem;
-
-    h1{
-        font-family: 'Archia', serif;
-    }
-    p{
-        margin-bottom: 1rem;
-        font-size: 1rem;
-    }
+    padding: 1.5rem;
     
     .intro-social{
-        margin-top: 2rem;
+        padding-top: 1.5rem;
         ul{
             display: flex;
             justify-content: center;
@@ -77,14 +67,9 @@ body {
 
     .intro-text{
         grid-area: text;
-        font-size: 2rem;
-        margin: 2vh 4vw;
+        font-size: 24px;
         font-family: 'Archia', serif;
         justify-content: center;
-        height: max-content;
-        place-self: center;
-        place-items: center;
-        width: auto;
         text-align: center;
         p{
             margin-top: 0.5rem;
@@ -92,11 +77,9 @@ body {
     }
     .intro-image{
         grid-area: img;
-        width: 80%;
+        width: 60%;
         text-align: center;
-    }
-    img{
-        width: 70%;
+        margin: auto;
     }
 
 }
@@ -119,9 +102,6 @@ body {
 /*main*/
 .services{
     width: 100vw;
-    margin: 7vh auto;
-
-    /*recent projects*/
     .service-container1{
 
         h2{
@@ -131,16 +111,6 @@ body {
             color: #232426;
         }
 
-        .cards{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            width: 90vw;
-            margin: 0.5rem 1rem;
-        }
-        position: relative;
-        img{
-            width: 20%;
-        }
     }
 
     /*about section*/
@@ -167,34 +137,28 @@ body {
             display: block;
             width: 70%;
             font-size: 19px;
-            margin: 2rem auto;
             line-height: 2rem;
+            margin: auto;
         }
         .text a{
             color: whitesmoke;
-
         }
 
     }
 
     /* section before footer*/
     .service-container3 {
-        height: 70vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 80%;
-        margin: 2vh auto;
+        padding: 1.5rem;
+        gap: 1.5rem;
         position: relative;
         .service-img {
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
-            background-image: url("../img/work10.png");
-            background-position: center;
-            background-size: 100%;
-            background-repeat: no-repeat;
-
+            align-items: center;
         }
         .service-description {
             width: 100%;
@@ -202,9 +166,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-top: 2rem;
             font-family: "Archia", serif;
-            padding-left: 3rem;
             text-align: left;
             p{
                span{
@@ -272,11 +234,13 @@ body {
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     .container-intro{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
         grid-template-areas: "text" "img";
+        margin-top: 3rem;
+        padding: 0 1.5rem;
 
         p{
             margin-bottom: 0;

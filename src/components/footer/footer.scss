@@ -1,6 +1,6 @@
 .footer{
-    background: #231924;
-    color: #d9cece;
+    background: var(--dark-purple);
+    color: #eee5e5;
     padding: 6vh 0  6vh 0;
     margin-top: auto;
     h4 {
@@ -10,13 +10,13 @@
     }
     p{
         margin-top: 0.5rem;
-        opacity: 0.5;
+        opacity: 0.8;
     }
     ul{
         list-style: none;
         li{
             a{
-                color: #d9cece;
+                color: #ece2e2;
             }
         }
     }
@@ -27,7 +27,7 @@
                 padding-right: 0.5rem;
                 a{
                     svg{
-                        opacity: 0.5;
+                        opacity: 0.8;
                     }
                     svg:hover{
                         opacity: 1;
@@ -51,12 +51,12 @@
     align-items: center;
     max-width: 100vw;
     position: relative;
-    margin-left: 2vh;
+    margin-left: 1.5rem;
 }
 
 .footer .social-media__item a {
     border-bottom: 1px solid #fff;
-    opacity: 0.5;
+    opacity: 0.8;
     -webkit-transition: 300ms opacity cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: 300ms opacity cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }

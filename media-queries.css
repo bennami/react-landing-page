@@ -1,0 +1,45 @@
+/*media queries*/
+/*start with @media, then add the type of device you are dealing with :
+- screen: desktop, phone ...
+- print: when u  print the page,
+- speech: text  to  speech, used for screen readers
+- all: you can selects all different types
+- ...
+
+then you can add a condition and ( in here comes your media query selector, often they are based on width)
+*/
+
+@media all and (max-width: 500px){
+ body{
+    color: red;
+ }
+}
+
+/*if you omit the all key word it takes default value of all*/
+@media (max-width: 1280px){
+    body{
+        color: yellow;
+    }
+}
+
+@media print{
+    body{
+      color: red;
+    }
+}
+
+/*you can also deal with orientation of device (orientation: landscape)*/
+@media (orientation: landscape) {
+    body{
+        color: orange;
+    }
+}
+
+/*you can also combine conditions, you can concat them with the and keyword or a comma for an 'or' statement*/
+@media (orientation: landscape) and (max-width: 500px){
+    body{
+        color: blue;
+    }
+}
+
+

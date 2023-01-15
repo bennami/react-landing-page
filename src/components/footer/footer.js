@@ -2,7 +2,7 @@ import React from "react"
 import {IconContext} from "react-icons";
 import {FaDribbble, FaGithub, FaInstagram, FaLinkedin, FaHeart,} from "react-icons/fa/index";
 import {FiMail} from "react-icons/fi/index";
-
+import "./footer.scss"
 
 const Footer =()=>{
 
@@ -10,7 +10,9 @@ const Footer =()=>{
         <footer className="footer" id={'footer'}>
             <div className="container">
                 <div>
-                    <h4 className="footer-title">BENNAMI   &copy; 2020</h4>
+                    <h4 className="footer-title">BENNAMI   &copy; 2022 <i><IconContext.Provider value={{ style: {fontSize: '10px', color: "whitesmoke"}}}>
+                        <FaHeart/>
+                    </IconContext.Provider></i></h4>
                     <a style={{color:"white"}} href="mailto:info@bennami.com">
                     <p className="footer-title"><i><IconContext.Provider value={{ style: { verticalAlign:'middle',fontSize: '15px', color: "whitesmoke"}}}>
                         <FiMail/>
@@ -18,9 +20,6 @@ const Footer =()=>{
                 </div>
 
                 <div className={"intro-social"}>
-                    <p>Let's link up <i><IconContext.Provider value={{ style: {fontSize: '10px', color: "whitesmoke"}}}>
-                        <FaHeart/>
-                    </IconContext.Provider></i></p>
                     <br/>
                     <ul>
                         <li>

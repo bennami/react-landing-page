@@ -1,0 +1,30 @@
+.projects{
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 200px;
+    grid-auto-flow: column;
+    padding: 1.5rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.project{
+    background: aqua;
+    border-radius: 20px;
+    display: inline-block;
+    height: 40vh;
+    position: relative;
+}
+
+.project .link{
+    background-color: lightgreen;
+    border-radius: 20px;
+    bottom: 1rem;
+    color: black;
+    left: 1rem;
+    padding: 0.5rem;
+    position: absolute;
+}
+
+.project .link i{
+    color: black;
+}
